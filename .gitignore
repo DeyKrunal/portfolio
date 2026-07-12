@@ -26,3 +26,4 @@ dist-ssr
 *.sln
 *.sw?
 portfolio-d3529-firebase-adminsdk-fbsvc-507795a5de.json
+.env.example
