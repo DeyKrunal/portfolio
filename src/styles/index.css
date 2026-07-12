@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/* DESIGN TOKENS                                                       */
+/* Signature: a single shifting "signal" gradient (accent) that reads  */
+/* as a live status indicator — this is a dev's site, so the accent    */
+/* behaves like a build/CI state light, not a decorative blob.         */
+/* ------------------------------------------------------------------ */
+:root {
+  /* --- Base neutrals (light) --- */
+  --color-bg: 250 250 249;          /* #FAFAF9 */
+  --color-bg-subtle: 244 244 243;   /* #F4F4F3 */
+  --color-surface: 255 255 255;
+  --color-surface-raised: 255 255 255;
+  --color-border: 228 228 226;
+  --color-border-strong: 210 210 207;
+  --color-text: 23 23 22;
+  --color-text-muted: 92 92 89;
+  --color-text-faint: 140 140 136;
+
+  /* --- Signal accent (the "build state" hue) --- */
+  --color-accent: 37 99 235;        /* #2563EB running-blue */
+  --color-accent-alt: 16 185 129;   /* #10B981 success-green */
+  --color-accent-warn: 217 119 6;   /* #D97706 amber */
+  --color-accent-contrast: 255 255 255;
+
+  /* --- Elevation --- */
+  --shadow-sm: 0 1px 2px rgba(23, 23, 22, 0.04);
+  --shadow-md: 0 4px 16px -4px rgba(23, 23, 22, 0.10), 0 1px 2px rgba(23,23,22,0.06);
+  --shadow-lg: 0 16px 48px -12px rgba(23, 23, 22, 0.18);
+  --shadow-glow: 0 0 0 1px rgb(var(--color-accent) / 0.15), 0 8px 32px -8px rgb(var(--color-accent) / 0.35);
+
+  /* --- Radius --- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* --- Type scale (fluid, clamp-based) --- */
+  --font-display: "Fragment", "Cabinet Grotesk", "Söhne", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+
+  --text-xs: clamp(0.75rem, 0.72rem + 0.1vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.84rem + 0.15vw, 0.9375rem);
+  --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --text-lg: clamp(1.125rem, 1.06rem + 0.3vw, 1.25rem);
+  --text-xl: clamp(1.375rem, 1.28rem + 0.45vw, 1.625rem);
+  --text-2xl: clamp(1.75rem, 1.6rem + 0.7vw, 2.25rem);
+  --text-3xl: clamp(2.25rem, 1.95rem + 1.4vw, 3.25rem);
+  --text-4xl: clamp(2.75rem, 2.2rem + 2.4vw, 4.5rem);
+
+  /* --- Spacing scale (8pt base) --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* --- Motion --- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 150ms;
+  --duration-base: 300ms;
+  --duration-slow: 600ms;
+
+  color-scheme: light;
+}
+
+.dark {
+  --color-bg: 10 10 10;
+  --color-bg-subtle: 17 17 16;
+  --color-surface: 20 20 19;
+  --color-surface-raised: 27 27 26;
+  --color-border: 40 40 38;
+  --color-border-strong: 58 58 55;
+  --color-text: 245 245 244;
+  --color-text-muted: 168 168 164;
+  --color-text-faint: 115 115 112;
+
+  --color-accent: 96 165 250;       /* lighter running-blue for dark bg */
+  --color-accent-alt: 52 211 153;
+  --color-accent-warn: 251 191 36;
+  --color-accent-contrast: 10 10 10;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 20px -4px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 24px 64px -12px rgba(0, 0, 0, 0.65);
+  --shadow-glow: 0 0 0 1px rgb(var(--color-accent) / 0.25), 0 8px 40px -8px rgb(var(--color-accent) / 0.45);
+
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light):not(.dark) {
+    --color-bg: 10 10 10;
+    --color-bg-subtle: 17 17 16;
+    --color-surface: 20 20 19;
+    --color-surface-raised: 27 27 26;
+    --color-border: 40 40 38;
+    --color-border-strong: 58 58 55;
+    --color-text: 245 245 244;
+    --color-text-muted: 168 168 164;
+    --color-text-faint: 115 115 112;
+    --color-accent: 96 165 250;
+    --color-accent-alt: 52 211 153;
+    --color-accent-warn: 251 191 36;
+    --color-accent-contrast: 10 10 10;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-bg: rgb(var(--color-bg));
+  --color-bg-subtle: rgb(var(--color-bg-subtle));
+  --color-surface: rgb(var(--color-surface));
+  --color-surface-raised: rgb(var(--color-surface-raised));
+  --color-border: rgb(var(--color-border));
+  --color-border-strong: rgb(var(--color-border-strong));
+  --color-text: rgb(var(--color-text));
+  --color-text-muted: rgb(var(--color-text-muted));
+  --color-text-faint: rgb(var(--color-text-faint));
+  --color-accent: rgb(var(--color-accent));
+  --color-accent-alt: rgb(var(--color-accent-alt));
+  --color-accent-warn: rgb(var(--color-accent-warn));
+  --color-accent-contrast: rgb(var(--color-accent-contrast));
+
+  --font-family-display: var(--font-display);
+  --font-family-body: var(--font-body);
+  --font-family-mono: var(--font-mono);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: rgb(var(--color-bg));
+    color: rgb(var(--color-text));
+    font-family: var(--font-body);
+    font-feature-settings: "cv11", "ss01";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: rgb(var(--color-accent) / 0.25);
+    color: rgb(var(--color-text));
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--color-accent));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgb(var(--color-surface) / 0.6);
+    backdrop-filter: blur(20px) saturate(1.4);
+    -webkit-backdrop-filter: blur(20px) saturate(1.4);
+    border: 1px solid rgb(var(--color-border) / 0.8);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .signal-dot {
+    box-shadow: 0 0 0 3px rgb(var(--color-accent-alt) / 0.15);
+  }
+}

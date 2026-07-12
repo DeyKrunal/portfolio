@@ -1,0 +1,2620 @@
+{
+  "generatedAt": "2026-07-12T07:22:57.154Z",
+  "profile": {
+    "login": "DeyKrunal",
+    "name": "KrunalDey",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/111558183?u=cae9537508d25e61937f7137b2fc91b8292fcb6c&v=4",
+    "bio": "",
+    "company": null,
+    "location": null,
+    "websiteUrl": null,
+    "followers": 10,
+    "following": 9,
+    "publicRepos": 11,
+    "createdAt": "2022-08-19T06:03:59Z"
+  },
+  "repositories": [
+    {
+      "id": "R_kgDOQsgrbg",
+      "name": "DeyKrunal",
+      "fullName": "DeyKrunal/DeyKrunal",
+      "description": null,
+      "url": "https://github.com/DeyKrunal/DeyKrunal",
+      "homepageUrl": null,
+      "isPinned": false,
+      "isFork": false,
+      "isArchived": false,
+      "isTemplate": false,
+      "stargazerCount": 0,
+      "forkCount": 0,
+      "openIssuesCount": 0,
+      "openPRCount": 0,
+      "watcherCount": 0,
+      "diskUsageKb": 10,
+      "primaryLanguage": null,
+      "languages": [],
+      "topics": [],
+      "licenseSpdxId": null,
+      "defaultBranch": "main",
+      "createdAt": "2025-12-21T06:49:35Z",
+      "updatedAt": "2026-06-08T17:39:26Z",
+      "pushedAt": "2026-06-08T17:39:22Z",
+      "latestRelease": null,
+      "readmeRaw": "# 👋 Hi, I'm Krunal\n\n🚀 Backend Developer | Problem Solver | System Builder\n\nI’m a passionate developer with a strong foundation in computer science (BCA graduate) and a deep interest in building **scalable, secure, and production-ready systems**.\n\nI don’t just write code — I design systems.\n\n---\n\n## 🧠 About Me\n\n* 🎯 Focused on mastering **backend development & system architecture**\n* ⚙️ Love working with **APIs, databases, and server-side logic**\n* 🛠️ Currently building **real-world, industrial-level projects**\n* 🔐 Strong focus on **security, validation, and performance**\n* 📈 Always improving through **hands-on development & deep learning**\n\n---\n\n## 💻 Tech Stack\n\n### 🚀 Backend\n\n* Node.js\n* PHP \n* REST API Development\n* Authentication & Authorization\n\n### 🗄️ Database\n\n* MySQL\n* Database Design & Optimization\n\n### 🌐 Frontend (Basic)\n\n* HTML, CSS, JavaScript\n* AJAX\n\n### 🧰 Tools & Concepts\n\n* Git & GitHub\n* MVC Architecture\n* CRUD Operations (with & without AJAX)\n* API Integration\n* File Handling & System Design\n\n---\n\n## 🔥 Current Focus\n\n* Building **production-level Laravel & Node.js applications**\n* Creating **secure, scalable backend systems**\n* Designing **real-world solutions (like automation & security systems)**\n* Improving **problem-solving & system thinking**\n\n---\n\n## 📂 Featured Projects\n\n### 🏢 File Management System (Laravel)\n\n* Structured file uploads (Firm → Year → Month → Day)\n* Secure storage & validation\n* Clean architecture & scalable design\n\n### 🔐 Custom Home Security System *(In Progress)*\n\n* Full-stack system (hardware + software)\n* Real-time monitoring & alerts\n* Future goal: complete automation ecosystem\n\n---\n\n## 🎯 Goals\n\n* Become a **top-tier backend engineer**\n* Build **high-performance, scalable systems**\n* Master **system design & architecture**\n* Contribute to **real-world impactful projects**\n\n---\n\n## 📫 Connect With Me\n\n* 💼 LinkedIn: *www.linkedin.com/in/krunal-dey-075391184*\n* 📧 Email: *deykrunal71@gmail.com*\n\n---\n\n## ⚡ Philosophy\n\n> “Don’t just build projects. Build systems that can survive real-world pressure.”\n\n",
+      "readmeHtml": null,
+      "ogImageUrl": "https://opengraph.githubassets.com/1/DeyKrunal/DeyKrunal",
+      "hasPagesSite": false,
+      "pagesUrl": null,
+      "detectedStack": [],
+      "category": "Other",
+      "contributors": [
+        {
+          "login": "DeyKrunal",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111558183?v=4",
+          "contributions": 5
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOSy1Bbw",
+      "name": "AUTP",
+      "fullName": "DeyKrunal/AUTP",
+      "description": null,
+      "url": "https://github.com/DeyKrunal/AUTP",
+      "homepageUrl": null,
+      "isPinned": false,
+      "isFork": false,
+      "isArchived": false,
+      "isTemplate": false,
+      "stargazerCount": 0,
+      "forkCount": 0,
+      "openIssuesCount": 0,
+      "openPRCount": 1,
+      "watcherCount": 0,
+      "diskUsageKb": 74,
+      "primaryLanguage": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 66465,
+          "percent": 66.6
+        },
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 33303,
+          "percent": 33.4
+        }
+      ],
+      "topics": [],
+      "licenseSpdxId": null,
+      "defaultBranch": "main",
+      "createdAt": "2026-06-06T12:54:47Z",
+      "updatedAt": "2026-07-04T11:34:28Z",
+      "pushedAt": "2026-06-07T12:36:28Z",
+      "latestRelease": null,
+      "readmeRaw": null,
+      "readmeHtml": null,
+      "ogImageUrl": "https://opengraph.githubassets.com/1/DeyKrunal/AUTP",
+      "hasPagesSite": false,
+      "pagesUrl": null,
+      "detectedStack": [],
+      "category": "Other",
+      "contributors": [
+        {
+          "login": "DeyKrunal",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111558183?v=4",
+          "contributions": 1
+        }
+      ]
+    },
+    {
+      "id": "R_kgDORbE8sg",
+      "name": "foodRescue",
+      "fullName": "DeyKrunal/foodRescue",
+      "description": null,
+      "url": "https://github.com/DeyKrunal/foodRescue",
+      "homepageUrl": null,
+      "isPinned": false,
+      "isFork": false,
+      "isArchived": false,
+      "isTemplate": false,
+      "stargazerCount": 0,
+      "forkCount": 0,
+      "openIssuesCount": 0,
+      "openPRCount": 1,
+      "watcherCount": 0,
+      "diskUsageKb": 5767,
+      "primaryLanguage": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 195863,
+          "percent": 76
+        },
+        {
+          "name": "Java",
+          "color": "#b07219",
+          "bytes": 46196,
+          "percent": 17.9
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 15263,
+          "percent": 5.9
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 359,
+          "percent": 0.1
+        }
+      ],
+      "topics": [],
+      "licenseSpdxId": null,
+      "defaultBranch": "main",
+      "createdAt": "2026-02-28T11:44:42Z",
+      "updatedAt": "2026-04-19T16:32:06Z",
+      "pushedAt": "2026-05-27T11:34:49Z",
+      "latestRelease": null,
+      "readmeRaw": "﻿# Food Rescue Platform 🥗\r\n\r\n## Overview\r\nFood Rescue Platform is a full-stack web application designed to bridge the gap between food surplus and those in need. It allows donors (restaurants, events, or individuals) to post available surplus food, which NGOs and other community organizations can then request and redistribute, effectively reducing food waste and addressing hunger.\r\n\r\n## ✨ Key Features\r\n- **User Roles**: Specialized dashboards for Donors, NGOs, and Administrators.\r\n- **Donation Management**: Donors can list food with details like quantity, food type (Veg/Non-Veg), and expiry time.\r\n- **Real-time Status Tracking**: Tracks donations from 'AVAILABLE' to 'COLLECTED'.\r\n- **Interactive Dashboards**: Managed views for tracking active donations and historical requests.\r\n- **Admin Panel**: Centralized control for user management and platform oversight.\r\n\r\n## 🚀 Tech Stack\r\n### **Frontend**\r\n- **Framework**: React.js (via Vite)\r\n- **Routing**: React Router DOM (v7)\r\n- **HTTP Client**: Axios\r\n- **Icons & Styling**: Lucide React / Modern CSS\r\n\r\n### **Backend**\r\n- **Framework**: Spring Boot (Java 8)\r\n- **Build Tool**: Maven\r\n- **Persistence**: Spring Data JPA / Hibernate\r\n- **Database**: H2 (In-memory for development)\r\n- **Utilities**: Lombok\r\n\r\n---\r\n\r\n## 🛠️ Project Setup\r\n\r\n### Prerequisites\r\n- [Java Development Kit (JDK) 8](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)\r\n- [Node.js](https://nodejs.org/) (v16.x or later)\r\n- [Maven](https://maven.apache.org/download.cgi)\r\n\r\n### 1. Backend Setup\r\n```bash\r\ncd backend\r\n# Build the project\r\nmvn clean install\r\n# Run the application\r\nmvn spring-boot:run\r\n```\r\nThe backend will be available at `http://localhost:8080`.\r\nThe H2 Console can be accessed at `http://localhost:8080/h2-console` (JDBC URL: `jdbc:h2:mem:foodrescuedb`).\r\n\r\n### 2. Frontend Setup\r\n```bash\r\ncd frontend\r\n# Install dependencies\r\nnpm install\r\n# Run in development mode\r\nnpm run dev\r\n```\r\nThe frontend will be available at `http://localhost:5173`.\r\n\r\n---\r\n\r\n## 📦 Pushing to GitHub\r\n\r\nTo push this project to your GitHub repository, follow these steps:\r\n\r\n1. **Initialize Git & Add Files**\r\n   ```bash\r\n   git init\r\n   git add .\r\n   git commit -m \"Initial commit: Food Rescue Platform\"\r\n   ```\r\n\r\n2. **Add Remote Origin & Push**\r\n   ```bash\r\n   # Replace the URL with your repository link\r\n   git branch -M main\r\n   git remote add origin https://github.com/DeyKrunal/foodRescue.git\r\n   git push -u origin main\r\n   ```\r\n\r\n## 🤝 Contributing\r\nContributions are welcome! Please feel free to submit a Pull Request.\r\n\r\n## 📄 License\r\nThis project is licensed under the MIT License.\r\n",
+      "readmeHtml": null,
+      "ogImageUrl": "https://opengraph.githubassets.com/1/DeyKrunal/foodRescue",
+      "hasPagesSite": false,
+      "pagesUrl": null,
+      "detectedStack": [],
+      "category": "Other",
+      "contributors": [
+        {
+          "login": "DeyKrunal",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111558183?v=4",
+          "contributions": 14
+        },
+        {
+          "login": "vidhii05",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/210222307?v=4",
+          "contributions": 3
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOQ2yRTA",
+      "name": "Hackathon_project",
+      "fullName": "DeyKrunal/Hackathon_project",
+      "description": null,
+      "url": "https://github.com/DeyKrunal/Hackathon_project",
+      "homepageUrl": null,
+      "isPinned": false,
+      "isFork": false,
+      "isArchived": false,
+      "isTemplate": false,
+      "stargazerCount": 0,
+      "forkCount": 0,
+      "openIssuesCount": 0,
+      "openPRCount": 1,
+      "watcherCount": 0,
+      "diskUsageKb": 7047,
+      "primaryLanguage": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 16433,
+          "percent": 90.7
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 1688,
+          "percent": 9.3
+        }
+      ],
+      "topics": [],
+      "licenseSpdxId": null,
+      "defaultBranch": "main",
+      "createdAt": "2026-01-09T15:57:30Z",
+      "updatedAt": "2026-01-09T15:58:50Z",
+      "pushedAt": "2026-01-09T20:44:59Z",
+      "latestRelease": null,
+      "readmeRaw": null,
+      "readmeHtml": null,
+      "ogImageUrl": "https://opengraph.githubassets.com/1/DeyKrunal/Hackathon_project",
+      "hasPagesSite": false,
+      "pagesUrl": null,
+      "detectedStack": [],
+      "category": "Other",
+      "contributors": [
+        {
+          "login": "DeyKrunal",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111558183?v=4",
+          "contributions": 1
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOQxH-KA",
+      "name": "SMART_SAFETY_SYSTEM",
+      "fullName": "DeyKrunal/SMART_SAFETY_SYSTEM",
+      "description": null,
+      "url": "https://github.com/DeyKrunal/SMART_SAFETY_SYSTEM",
+      "homepageUrl": null,
+      "isPinned": false,
+      "isFork": false,
+      "isArchived": false,
+      "isTemplate": false,
+      "stargazerCount": 0,
+      "forkCount": 0,
+      "openIssuesCount": 0,
+      "openPRCount": 0,
+      "watcherCount": 0,
+      "diskUsageKb": 22694,
+      "primaryLanguage": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 5015,
+          "percent": 100
+        }
+      ],
+      "topics": [],
+      "licenseSpdxId": null,
+      "defaultBranch": "main",
+      "createdAt": "2025-12-30T11:56:10Z",
+      "updatedAt": "2026-01-05T14:17:11Z",
+      "pushedAt": "2026-01-05T14:17:08Z",
+      "latestRelease": null,
+      "readmeRaw": "# 🚨 Smart Safety System\n\n## 📌 Overview\n\nThe **Smart Safety System** is an intelligent security solution designed to monitor environments, detect threats, and provide real-time alerts. It integrates sensors, cloud services, and AI technologies to ensure safety in homes, offices, industries, and public spaces with minimal human intervention.\n\n---\n\n## 🎯 Objectives\n\n* Detect unsafe conditions and security threats\n* Provide real-time alerts and notifications\n* Automate safety monitoring and responses\n* Improve reliability, speed, and accuracy using AI\n\n---\n\n## 🧠 Key Features\n\n* 🔍 Real-time environment monitoring\n* 🚪 Unauthorized access detection\n* 🔥 Fire and gas leakage alerts\n* 📱 Mobile and web notifications\n* 🤖 AI-based threat detection\n* ☁️ Cloud-based data storage and analytics\n\n---\n\n## 🏗️ System Architecture\n\n1. **Sensors & Devices** – Motion, gas, fire, camera modules\n2. **Controller** – Microcontroller / Edge device\n3. **Cloud Backend** – Data processing & storage\n4. **AI Layer** – Intelligent analysis and prediction\n5. **User Interface** – Mobile app / web dashboard\n\n---\n\n## ☁️ Google Technologies Used\n\n* **Google Cloud Platform (GCP)**\n* **Firebase (Firestore / Realtime Database)**\n* **Google Cloud Functions**\n* **Google Cloud Storage**\n* **Google Maps API**\n* **Google Cloud IoT Core**\n* **Android (Mobile Application)**\n* **Google Assistant SDK**\n\n---\n\n## 🤖 Google AI Tools Integrated\n\n* **Vertex AI** – Model training & deployment\n* **Cloud Vision AI** – Object & face detection\n* **Speech-to-Text API** – Voice commands\n* **Text-to-Speech API** – Audio alerts\n* **AutoML** – Custom AI models ,Natural Language API\n* **TensorFlow Lite** – Edge AI processing\n\n---\n\n## 🛠️ Technology Stack\n\n* **Frontend:** Android / Web Dashboard\n* **Backend:** Node.js / Cloud Functions\n* **Database:** Firebase \n* **AI/ML:**Vertex AI, TensorFlow\n* **Cloud:** Google Cloud Platform\n\n---\n\n## 📂 Project Structure\n\n```\nSmart-Safety-System/\n│\n├── hardware/          # Sensor and device code\n├── backend/           # Cloud functions & APIs\n├── ai-models/         # AI/ML models\n├── mobile-app/        # Android application\n├── web-dashboard/     # Admin dashboard\n├── docs/              # Documentation\n└── README.md\n```\n\n---\n\n## 🚀 Future Enhancements\n\n* Smart facial recognition access control\n* Predictive risk analysis using AI\n* Full home automation integration\n* Emergency authority auto-contact system\n\n---\n",
+      "readmeHtml": null,
+      "ogImageUrl": "https://opengraph.githubassets.com/1/DeyKrunal/SMART_SAFETY_SYSTEM",
+      "hasPagesSite": true,
+      "pagesUrl": "https://deykrunal.github.io/SMART_SAFETY_SYSTEM/",
+      "detectedStack": [],
+      "category": "Other",
+      "contributors": [
+        {
+          "login": "DeyKrunal",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111558183?v=4",
+          "contributions": 3
+        },
+        {
+          "login": "kalpshah01",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/179741489?v=4",
+          "contributions": 3
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOOdqFuA",
+      "name": "myinfo",
+      "fullName": "DeyKrunal/myinfo",
+      "description": null,
+      "url": "https://github.com/DeyKrunal/myinfo",
+      "homepageUrl": null,
+      "isPinned": false,
+      "isFork": false,
+      "isArchived": false,
+      "isTemplate": false,
+      "stargazerCount": 0,
+      "forkCount": 0,
+      "openIssuesCount": 0,
+      "openPRCount": 0,
+      "watcherCount": 1,
+      "diskUsageKb": 13,
+      "primaryLanguage": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 8270,
+          "percent": 100
+        }
+      ],
+      "topics": [],
+      "licenseSpdxId": null,
+      "defaultBranch": "main",
+      "createdAt": "2025-04-22T09:36:14Z",
+      "updatedAt": "2025-08-01T02:43:37Z",
+      "pushedAt": "2025-08-01T02:43:33Z",
+      "latestRelease": null,
+      "readmeRaw": "# myinfo",
+      "readmeHtml": null,
+      "ogImageUrl": "https://opengraph.githubassets.com/1/DeyKrunal/myinfo",
+      "hasPagesSite": true,
+      "pagesUrl": "https://deykrunal.github.io/myinfo/",
+      "detectedStack": [],
+      "category": "Other",
+      "contributors": [
+        {
+          "login": "DeyKrunal",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111558183?v=4",
+          "contributions": 6
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOPQ85jQ",
+      "name": "final_website",
+      "fullName": "DeyKrunal/final_website",
+      "description": null,
+      "url": "https://github.com/DeyKrunal/final_website",
+      "homepageUrl": null,
+      "isPinned": true,
+      "isFork": false,
+      "isArchived": false,
+      "isTemplate": false,
+      "stargazerCount": 0,
+      "forkCount": 0,
+      "openIssuesCount": 0,
+      "openPRCount": 0,
+      "watcherCount": 0,
+      "diskUsageKb": 30960,
+      "primaryLanguage": "PHP",
+      "languages": [
+        {
+          "name": "PHP",
+          "color": "#4F5D95",
+          "bytes": 1593654,
+          "percent": 67.2
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 415793,
+          "percent": 17.5
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 239641,
+          "percent": 10.1
+        },
+        {
+          "name": "Hack",
+          "color": "#878787",
+          "bytes": 90431,
+          "percent": 3.8
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 24456,
+          "percent": 1
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 8884,
+          "percent": 0.4
+        }
+      ],
+      "topics": [],
+      "licenseSpdxId": null,
+      "defaultBranch": "main",
+      "createdAt": "2025-07-22T16:44:44Z",
+      "updatedAt": "2025-07-22T16:49:35Z",
+      "pushedAt": "2025-07-23T16:40:42Z",
+      "latestRelease": null,
+      "readmeRaw": "\"# final_website\" \n",
+      "readmeHtml": null,
+      "ogImageUrl": "https://opengraph.githubassets.com/1/DeyKrunal/final_website",
+      "hasPagesSite": false,
+      "pagesUrl": null,
+      "detectedStack": [],
+      "category": "Other",
+      "contributors": [
+        {
+          "login": "DeyKrunal",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111558183?v=4",
+          "contributions": 2
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOLi3jSw",
+      "name": "website_first",
+      "fullName": "DeyKrunal/website_first",
+      "description": null,
+      "url": "https://github.com/DeyKrunal/website_first",
+      "homepageUrl": null,
+      "isPinned": true,
+      "isFork": false,
+      "isArchived": false,
+      "isTemplate": false,
+      "stargazerCount": 0,
+      "forkCount": 0,
+      "openIssuesCount": 0,
+      "openPRCount": 0,
+      "watcherCount": 1,
+      "diskUsageKb": 7500,
+      "primaryLanguage": "PHP",
+      "languages": [
+        {
+          "name": "PHP",
+          "color": "#4F5D95",
+          "bytes": 1109070,
+          "percent": 63.2
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 383863,
+          "percent": 21.9
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 156165,
+          "percent": 8.9
+        },
+        {
+          "name": "Hack",
+          "color": "#878787",
+          "bytes": 90307,
+          "percent": 5.1
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 12228,
+          "percent": 0.7
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 4442,
+          "percent": 0.3
+        }
+      ],
+      "topics": [],
+      "licenseSpdxId": null,
+      "defaultBranch": "main",
+      "createdAt": "2024-03-20T06:05:37Z",
+      "updatedAt": "2025-07-22T16:20:40Z",
+      "pushedAt": "2024-03-20T06:19:42Z",
+      "latestRelease": null,
+      "readmeRaw": null,
+      "readmeHtml": null,
+      "ogImageUrl": "https://opengraph.githubassets.com/1/DeyKrunal/website_first",
+      "hasPagesSite": false,
+      "pagesUrl": null,
+      "detectedStack": [],
+      "category": "Other",
+      "contributors": [
+        {
+          "login": "DeyKrunal",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111558183?v=4",
+          "contributions": 1
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOLd7MsQ",
+      "name": "faculty",
+      "fullName": "DeyKrunal/faculty",
+      "description": null,
+      "url": "https://github.com/DeyKrunal/faculty",
+      "homepageUrl": null,
+      "isPinned": true,
+      "isFork": false,
+      "isArchived": false,
+      "isTemplate": false,
+      "stargazerCount": 1,
+      "forkCount": 1,
+      "openIssuesCount": 0,
+      "openPRCount": 0,
+      "watcherCount": 1,
+      "diskUsageKb": 521,
+      "primaryLanguage": "Dart",
+      "languages": [
+        {
+          "name": "Dart",
+          "color": "#00B4AB",
+          "bytes": 102138,
+          "percent": 99.7
+        },
+        {
+          "name": "Java",
+          "color": "#b07219",
+          "bytes": 156,
+          "percent": 0.2
+        },
+        {
+          "name": "Kotlin",
+          "color": "#A97BFF",
+          "bytes": 120,
+          "percent": 0.1
+        }
+      ],
+      "topics": [],
+      "licenseSpdxId": null,
+      "defaultBranch": "main",
+      "createdAt": "2024-03-09T13:21:14Z",
+      "updatedAt": "2025-09-20T15:32:45Z",
+      "pushedAt": "2024-03-19T02:30:20Z",
+      "latestRelease": null,
+      "readmeRaw": "# project_management_system\n\nA new Flutter project.\n\n## Getting Started\n\nThis project is a starting point for a Flutter application.\n\nA few resources to get you started if this is your first Flutter project:\n\n- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)\n- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)\n\nFor help getting started with Flutter development, view the\n[online documentation](https://docs.flutter.dev/), which offers tutorials,\nsamples, guidance on mobile development, and a full API reference.\n",
+      "readmeHtml": null,
+      "ogImageUrl": "https://opengraph.githubassets.com/1/DeyKrunal/faculty",
+      "hasPagesSite": false,
+      "pagesUrl": null,
+      "detectedStack": [],
+      "category": "Other",
+      "contributors": [
+        {
+          "login": "gunjan-ginoya",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/148769307?v=4",
+          "contributions": 7
+        },
+        {
+          "login": "DeyKrunal",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111558183?v=4",
+          "contributions": 1
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOLeMVHA",
+      "name": "student",
+      "fullName": "DeyKrunal/student",
+      "description": null,
+      "url": "https://github.com/DeyKrunal/student",
+      "homepageUrl": null,
+      "isPinned": true,
+      "isFork": false,
+      "isArchived": false,
+      "isTemplate": false,
+      "stargazerCount": 1,
+      "forkCount": 1,
+      "openIssuesCount": 0,
+      "openPRCount": 0,
+      "watcherCount": 1,
+      "diskUsageKb": 1162,
+      "primaryLanguage": "Dart",
+      "languages": [
+        {
+          "name": "Dart",
+          "color": "#00B4AB",
+          "bytes": 222653,
+          "percent": 82
+        },
+        {
+          "name": "C++",
+          "color": "#f34b7d",
+          "bytes": 23615,
+          "percent": 8.7
+        },
+        {
+          "name": "CMake",
+          "color": "#DA3434",
+          "bytes": 19476,
+          "percent": 7.2
+        },
+        {
+          "name": "Swift",
+          "color": "#F05138",
+          "bytes": 2222,
+          "percent": 0.8
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 1843,
+          "percent": 0.7
+        },
+        {
+          "name": "C",
+          "color": "#555555",
+          "bytes": 1425,
+          "percent": 0.5
+        },
+        {
+          "name": "Kotlin",
+          "color": "#A97BFF",
+          "bytes": 125,
+          "percent": 0
+        },
+        {
+          "name": "Objective-C",
+          "color": "#438eff",
+          "bytes": 38,
+          "percent": 0
+        }
+      ],
+      "topics": [],
+      "licenseSpdxId": null,
+      "defaultBranch": "main",
+      "createdAt": "2024-03-10T09:02:26Z",
+      "updatedAt": "2025-09-20T15:32:44Z",
+      "pushedAt": "2024-03-14T19:47:48Z",
+      "latestRelease": null,
+      "readmeRaw": null,
+      "readmeHtml": null,
+      "ogImageUrl": "https://opengraph.githubassets.com/1/DeyKrunal/student",
+      "hasPagesSite": false,
+      "pagesUrl": null,
+      "detectedStack": [],
+      "category": "Other",
+      "contributors": [
+        {
+          "login": "DeyKrunal",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111558183?v=4",
+          "contributions": 6
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOK9akVg",
+      "name": "ProjectManagement",
+      "fullName": "DeyKrunal/ProjectManagement",
+      "description": null,
+      "url": "https://github.com/DeyKrunal/ProjectManagement",
+      "homepageUrl": null,
+      "isPinned": true,
+      "isFork": false,
+      "isArchived": false,
+      "isTemplate": false,
+      "stargazerCount": 1,
+      "forkCount": 1,
+      "openIssuesCount": 0,
+      "openPRCount": 0,
+      "watcherCount": 1,
+      "diskUsageKb": 6581,
+      "primaryLanguage": "PHP",
+      "languages": [
+        {
+          "name": "PHP",
+          "color": "#4F5D95",
+          "bytes": 849100,
+          "percent": 57.5
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 382785,
+          "percent": 25.9
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 156165,
+          "percent": 10.6
+        },
+        {
+          "name": "Hack",
+          "color": "#878787",
+          "bytes": 71228,
+          "percent": 4.8
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 12228,
+          "percent": 0.8
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 4442,
+          "percent": 0.3
+        }
+      ],
+      "topics": [],
+      "licenseSpdxId": null,
+      "defaultBranch": "project",
+      "createdAt": "2023-12-25T05:34:55Z",
+      "updatedAt": "2025-09-20T15:32:44Z",
+      "pushedAt": "2024-01-18T06:47:07Z",
+      "latestRelease": null,
+      "readmeRaw": null,
+      "readmeHtml": null,
+      "ogImageUrl": "https://opengraph.githubassets.com/1/DeyKrunal/ProjectManagement",
+      "hasPagesSite": false,
+      "pagesUrl": null,
+      "detectedStack": [],
+      "category": "Other",
+      "contributors": [
+        {
+          "login": "JaySopariwala2911",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111558318?v=4",
+          "contributions": 5
+        },
+        {
+          "login": "presswaladiya",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111558441?v=4",
+          "contributions": 4
+        },
+        {
+          "login": "DeyKrunal",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/111558183?v=4",
+          "contributions": 3
+        }
+      ]
+    }
+  ],
+  "pinnedRepositoryIds": [
+    "R_kgDOPQ85jQ",
+    "R_kgDOLi3jSw",
+    "R_kgDOLd7MsQ",
+    "R_kgDOLeMVHA",
+    "R_kgDOK9akVg"
+  ],
+  "totalStars": 3,
+  "contributionCalendar": {
+    "totalContributions": 35,
+    "days": [
+      {
+        "date": "2025-07-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-22",
+        "count": 3,
+        "level": 3
+      },
+      {
+        "date": "2025-07-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-30",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-31",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-01",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-08-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-30",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-31",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-30",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-30",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-31",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-30",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-21",
+        "count": 2,
+        "level": 2
+      },
+      {
+        "date": "2025-12-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-30",
+        "count": 3,
+        "level": 3
+      },
+      {
+        "date": "2025-12-31",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-05",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-01-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-09",
+        "count": 2,
+        "level": 2
+      },
+      {
+        "date": "2026-01-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-30",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-31",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-28",
+        "count": 3,
+        "level": 3
+      },
+      {
+        "date": "2026-03-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-02",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-03-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-05",
+        "count": 2,
+        "level": 2
+      },
+      {
+        "date": "2026-03-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-30",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-03-31",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-12",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-04-13",
+        "count": 3,
+        "level": 3
+      },
+      {
+        "date": "2026-04-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-19",
+        "count": 4,
+        "level": 4
+      },
+      {
+        "date": "2026-04-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-30",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-05-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-30",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-31",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-06",
+        "count": 3,
+        "level": 3
+      },
+      {
+        "date": "2026-06-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-08",
+        "count": 4,
+        "level": 4
+      },
+      {
+        "date": "2026-06-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-30",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-12",
+        "count": 0,
+        "level": 0
+      }
+    ]
+  },
+  "currentStreak": 0,
+  "longestStreak": 2,
+  "topLanguages": [
+    {
+      "name": "PHP",
+      "color": "#4F5D95",
+      "percent": 55.8
+    },
+    {
+      "name": "JavaScript",
+      "color": "#f1e05a",
+      "percent": 21.9
+    },
+    {
+      "name": "CSS",
+      "color": "#663399",
+      "percent": 8.9
+    },
+    {
+      "name": "Dart",
+      "color": "#00B4AB",
+      "percent": 5.1
+    },
+    {
+      "name": "Hack",
+      "color": "#878787",
+      "percent": 4
+    },
+    {
+      "name": "HTML",
+      "color": "#e34c26",
+      "percent": 2.1
+    },
+    {
+      "name": "Java",
+      "color": "#b07219",
+      "percent": 0.7
+    },
+    {
+      "name": "Python",
+      "color": "#3572A5",
+      "percent": 0.5
+    }
+  ]
+}
