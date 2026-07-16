@@ -112,7 +112,8 @@ function withSuspense(Component: React.LazyExoticComponent<() => React.JSX.Eleme
   );
 }
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+[
   {
     element: <RootLayout />,
     errorElement: <NotFoundPage />,
@@ -163,7 +164,8 @@ export const router = createBrowserRouter([
       },
     ],
   },
-  {
-    basename: "/portfolio",
-  }
-]);
+],
+{
+  basename: "/portfolio",
+}
+);
