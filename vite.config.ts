@@ -23,13 +23,13 @@ export default defineConfig({
         theme_color: "#0A0A0A",
         background_color: "#0A0A0A",
         display: "standalone",
-        start_url: "/",
-        scope: "/",
+        start_url: "/portfolio/",
+        scope: "/portfolio/",
         icons: [
-          { src: "/icon-192.png", sizes: "192x192", type: "image/png" },
-          { src: "/icon-512.png", sizes: "512x512", type: "image/png" },
+          { src: "/portfolio/icon-192.png", sizes: "192x192", type: "image/png" },
+          { src: "/portfolio/icon-512.png", sizes: "512x512", type: "image/png" },
           {
-            src: "/icon-maskable-512.png",
+            src: "/portfolio/icon-maskable-512.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable",
