@@ -8,7 +8,7 @@ import path from "path";
 // If you rename this to a project-page repo, set VITE_BASE_PATH="/repo-name/"
 // in the build environment instead.
 export default defineConfig({
-  base: process.env.VITE_BASE_PATH || "/",
+  base: process.env.VITE_BASE_PATH || "/portfolio/",
   plugins: [
     react(),
     tailwindcss(),
