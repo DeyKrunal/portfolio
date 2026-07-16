@@ -13,6 +13,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
+      base: "/portfolio/",
       registerType: "autoUpdate",
       includeAssets: ["favicon.svg", "apple-touch-icon.png"],
       manifest: {
