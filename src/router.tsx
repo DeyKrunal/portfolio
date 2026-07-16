@@ -116,7 +116,6 @@ export const router = createBrowserRouter([
   {
     element: <RootLayout />,
     errorElement: <NotFoundPage />,
-    basename: "/portfolio",
     children: [
       { path: "/", element: withSuspense(HomePage) },
       { path: "/projects", element: withSuspense(ProjectsPage) },
@@ -164,4 +163,7 @@ export const router = createBrowserRouter([
       },
     ],
   },
+  {
+    basename: "/portfolio",
+  }
 ]);
