@@ -28,6 +28,7 @@ export const app = firebaseEnabled
     : initializeApp(firebaseConfig)
   : null;
 
+  console.log(getAuth().currentUser);
 export const auth = app ? getAuth(app) : null;
 export const db = app ? getFirestore(app) : null;
 export const storage = app ? getStorage(app) : null;
