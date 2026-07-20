@@ -72,7 +72,7 @@ const PROFILE_QUERY = /* GraphQL */ `
       websiteUrl
       followers { totalCount }
       following { totalCount }
-      // repositories(first: 1, isFork: false) { totalCount }
+      # repositories(first: 1, isFork: false) { totalCount }
       createdAt
       pinnedItems(first: 12, types: [REPOSITORY]) {
         nodes {
