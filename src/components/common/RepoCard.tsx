@@ -25,7 +25,7 @@ export function RepoCard({ repo }: { repo: Repository }) {
   return (
     <Link
       to={`/projects/${repo.name}`}
-      className="group flex flex-col gap-3 rounded-[--radius-lg] border border-[--color-border] bg-[--color-surface] p-5 shadow-[--shadow-sm] transition-all duration-200 hover:-translate-y-0.5 hover:border-[--color-border-strong] hover:shadow-[--shadow-md]"
+      className="group flex flex-col gap-3 rounded-[--radius-lg] border border-[--color-border] bg-[--color-surface] p-5 shadow-[--shadow-sm] transition-all duration-200 hover:-translate-y-0.5 hover:border-[--color-accent]/40 hover:shadow-[--shadow-glow]"
     >
       <div className="flex items-start justify-between gap-2">
         <h3 className="font-[--font-display] text-base font-semibold text-[--color-text] group-hover:text-[--color-accent]">

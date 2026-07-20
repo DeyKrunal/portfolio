@@ -9,6 +9,7 @@ export function App() {
     <ThemeProvider>
       <QueryProvider>
         <AuthProvider>
+          <div className="grain-overlay" aria-hidden="true" />
           <RouterProvider router={router} />
         </AuthProvider>
       </QueryProvider>

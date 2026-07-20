@@ -8,14 +8,14 @@
  * secrets.GITHUB_TOKEN via the workflow (see .github/workflows/sync-github-data.yml).
  * NEVER commit a token. NEVER expose this script's output token, only its data.
  */
-import { mkdirSync, writeFileSync } from "node:fs";
+import { writeFileSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, "../public/data");
 const USERNAME = process.env.GH_USERNAME || "DeyKrunal";
-const TOKEN = process.env.GH_TOKEN ;
+const TOKEN = process.env.GH_TOKEN;
 
 if (!TOKEN) {
   console.error("Missing GH_TOKEN environment variable. Aborting.");
@@ -59,7 +59,6 @@ async function rest(endpoint) {
 
 // ---------------------------------------------------------------------
 // 1. Profile + pinned + all repos (single GraphQL round trip, paginated)
-      // repositories(first: 1, isFork: false) { totalCount }
 // ---------------------------------------------------------------------
 const PROFILE_QUERY = /* GraphQL */ `
   query ($login: String!, $after: String) {
@@ -73,6 +72,7 @@ const PROFILE_QUERY = /* GraphQL */ `
       websiteUrl
       followers { totalCount }
       following { totalCount }
+      repositories(first: 1, isFork: false) { totalCount }
       createdAt
       pinnedItems(first: 12, types: [REPOSITORY]) {
         nodes {

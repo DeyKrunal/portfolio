@@ -1,8 +1,8 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
-import { VitePWA } from "vite-plugin-pwa";
+import react from "@vitejs/plugin-react";
 import path from "path";
+import { defineConfig } from "vite";
+import { VitePWA } from "vite-plugin-pwa";
 
 // GitHub Pages serves a root-domain repo (username.github.io) from "/".
 // If you rename this to a project-page repo, set VITE_BASE_PATH="/repo-name/"

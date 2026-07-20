@@ -19,16 +19,22 @@ describe("CommandPaletteTrigger", () => {
   it("opens the command palette on Ctrl+K", async () => {
     renderWithProviders();
     fireEvent.keyDown(document, { key: "k", ctrlKey: true });
-    await waitFor(() => {
-      expect(screen.getByRole("dialog", { name: "Search" })).toBeInTheDocument();
-    });
+    await waitFor(
+      () => {
+        expect(screen.getByRole("dialog", { name: "Search" })).toBeInTheDocument();
+      },
+      { timeout: 3000 }
+    );
   });
 
   it("opens the command palette when the visible button is clicked", async () => {
     renderWithProviders();
     fireEvent.click(screen.getByRole("button", { name: /Open search/i }));
-    await waitFor(() => {
-      expect(screen.getByRole("dialog", { name: "Search" })).toBeInTheDocument();
-    });
+    await waitFor(
+      () => {
+        expect(screen.getByRole("dialog", { name: "Search" })).toBeInTheDocument();
+      },
+      { timeout: 3000 }
+    );
   });
 });

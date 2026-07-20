@@ -15,7 +15,9 @@ export function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="mx-auto max-w-6xl px-4 pb-16 pt-20 sm:px-6 sm:pt-28">
+      <section className="relative mx-auto max-w-6xl overflow-hidden px-4 pb-16 pt-20 sm:px-6 sm:pt-28">
+        <div className="mesh-bg" aria-hidden="true" />
+
         <motion.p
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -31,7 +33,7 @@ export function HomePage() {
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: 0.05 }}
           className="max-w-3xl text-balance font-[--font-display] text-[length:--text-4xl] font-semibold leading-[1.05] tracking-tight"
         >
-          {data?.profile.name || siteConfig.siteName}
+          <span className="text-gradient">{data?.profile.name || siteConfig.siteName}</span>
         </motion.h1>
 
         <motion.p
@@ -51,7 +53,7 @@ export function HomePage() {
         >
           <Link
             to="/projects"
-            className="flex items-center gap-2 rounded-full bg-[--color-accent] px-5 py-2.5 text-sm font-medium text-[--color-accent-contrast] transition-transform hover:scale-[1.02]"
+            className="glow-on-hover flex items-center gap-2 rounded-full bg-[--color-accent] px-5 py-2.5 text-sm font-medium text-[--color-accent-contrast] transition-transform hover:scale-[1.02]"
           >
             View projects <ArrowRight size={15} />
           </Link>

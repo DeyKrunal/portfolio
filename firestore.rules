@@ -10,7 +10,7 @@ service cloud.firestore {
       return request.auth != null &&
         request.auth.token.email in [
           // Replace with your real email(s) before deploying rules.
-          'deykrunal71@gmail.com'
+          'you@example.com'
         ];
     }
 
