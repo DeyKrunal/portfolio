@@ -1,3 +1,5 @@
+import { auth, firebaseEnabled, googleProvider } from "@/lib/firebase";
+import { browserSessionPersistence, onAuthStateChanged, setPersistence, signInWithPopup, signOut, type User } from "firebase/auth";
 import {
   createContext,
   useContext,
@@ -5,8 +7,6 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import { onAuthStateChanged, signInWithPopup, signOut, type User } from "firebase/auth";
-import { auth, googleProvider, firebaseEnabled } from "@/lib/firebase";
 
 const ADMIN_EMAILS = (import.meta.env.VITE_ADMIN_EMAILS ?? "")
   .split(",")
@@ -52,6 +52,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
     setError(null);
     try {
+      await setPersistence(auth, browserSessionPersistence);
       await signInWithPopup(auth, googleProvider);
     } catch (err) {
       console.error(err);
