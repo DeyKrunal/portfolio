@@ -57,7 +57,7 @@ export function AdminLoginPage() {
         </button>
 
         <a
-          href="/"
+          href="/portfolio/"
           className="mt-6 inline-flex items-center gap-1 text-xs text-[--color-text-faint] hover:text-[--color-text]"
         >
           <ArrowLeft size={12} /> Back to site
