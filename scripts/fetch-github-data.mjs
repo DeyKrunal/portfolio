@@ -8,7 +8,7 @@
  * secrets.GITHUB_TOKEN via the workflow (see .github/workflows/sync-github-data.yml).
  * NEVER commit a token. NEVER expose this script's output token, only its data.
  */
-import { writeFileSync, mkdirSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -72,7 +72,7 @@ const PROFILE_QUERY = /* GraphQL */ `
       websiteUrl
       followers { totalCount }
       following { totalCount }
-      repositories(first: 1, isFork: false) { totalCount }
+      // repositories(first: 1, isFork: false) { totalCount }
       createdAt
       pinnedItems(first: 12, types: [REPOSITORY]) {
         nodes {
