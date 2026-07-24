@@ -1,4 +1,4 @@
-# Krunal Dey — Portfolio Platform
+# Krunal Dey — Portfolio Platform Old UI
 
 A developer portfolio that syncs itself from GitHub. Projects, languages, stars,
 READMEs, and contribution stats are fetched by a scheduled GitHub Action and
