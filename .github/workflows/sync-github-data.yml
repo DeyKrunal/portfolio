@@ -2,7 +2,7 @@ name: Sync GitHub Data
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # every 6 hours
+    - cron: "0 */18 * * *" # every 18 hours
   workflow_dispatch: {}
   push:
     branches: [main]
