@@ -28,12 +28,19 @@ export function Header() {
               to={item.href}
               className={({ isActive }) =>
                 cn(
-                  "rounded-full px-3 py-1.5 text-sm text-[--color-text-muted] transition-colors duration-150 hover:text-[--color-text]",
-                  isActive && "bg-[--color-bg-subtle] text-[--color-text]"
+                  "relative rounded-full px-3 py-1.5 text-sm text-[--color-text-muted] transition-colors duration-150 hover:text-[--color-text]",
+                  isActive && "text-[--color-text]"
                 )
               }
             >
-              {item.label}
+              {({ isActive }) => (
+                <>
+                  {item.label}
+                  {isActive && (
+                    <span className="absolute inset-x-3 -bottom-[1px] h-[2px] rounded-full bg-[--color-accent]" />
+                  )}
+                </>
+              )}
             </NavLink>
           ))}
         </nav>
@@ -95,8 +102,8 @@ export function Header() {
 function StatusDot() {
   return (
     <span className="relative flex h-2 w-2">
-      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[--color-accent-alt] opacity-60" />
-      <span className="relative inline-flex h-2 w-2 rounded-full bg-[--color-accent-alt] signal-dot" />
+      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[--color-accent] opacity-60" />
+      <span className="relative inline-flex h-2 w-2 rounded-full bg-[--color-accent] signal-dot" />
     </span>
   );
 }

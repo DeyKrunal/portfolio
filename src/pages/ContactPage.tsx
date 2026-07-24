@@ -158,7 +158,7 @@ export function ContactPage() {
         </button>
 
         {status === "sent" && (
-          <p className="flex items-center gap-2 text-sm text-[--color-accent-alt]">
+          <p className="flex items-center gap-2 text-sm text-[--color-accent]">
             <CheckCircle2 size={15} /> Message sent. Thanks for reaching out.
           </p>
         )}

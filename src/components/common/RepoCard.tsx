@@ -3,22 +3,27 @@ import { Star, GitFork, ExternalLink } from "lucide-react";
 import type { Repository } from "@/types/github";
 import { cn } from "@/lib/cn";
 
+// Category colors are drawn from the site's actual accent tokens
+// (green/gold/violet/rust) wherever a category maps naturally onto one,
+// with a small curated set of one-off hexes for the remainder -- kept to
+// under 8 distinct hues total across 15 categories so it reads as a
+// cohesive palette, not a randomized tag-color generator.
 const CATEGORY_STYLES: Record<string, string> = {
-  Frontend: "bg-blue-500/10 text-blue-400",
-  Backend: "bg-purple-500/10 text-purple-400",
-  "Full Stack": "bg-indigo-500/10 text-indigo-400",
-  AI: "bg-pink-500/10 text-pink-400",
-  ML: "bg-rose-500/10 text-rose-400",
-  CLI: "bg-amber-500/10 text-amber-400",
-  Mobile: "bg-teal-500/10 text-teal-400",
-  Desktop: "bg-cyan-500/10 text-cyan-400",
-  Library: "bg-emerald-500/10 text-emerald-400",
-  Tool: "bg-lime-500/10 text-lime-500",
-  Game: "bg-fuchsia-500/10 text-fuchsia-400",
-  API: "bg-orange-500/10 text-orange-400",
-  Utility: "bg-slate-500/10 text-slate-400",
-  Research: "bg-violet-500/10 text-violet-400",
-  Other: "bg-neutral-500/10 text-neutral-400",
+  Frontend: "bg-[--color-accent]/10 text-[--color-accent]",
+  Library: "bg-[--color-accent]/10 text-[--color-accent]",
+  Backend: "bg-[--color-accent-alt]/10 text-[--color-accent-alt]",
+  Tool: "bg-[--color-accent-alt]/10 text-[--color-accent-alt]",
+  "Full Stack": "bg-[--color-accent-violet]/10 text-[--color-accent-violet]",
+  Game: "bg-[--color-accent-violet]/10 text-[--color-accent-violet]",
+  Research: "bg-[--color-accent-violet]/10 text-[--color-accent-violet]",
+  AI: "bg-[--color-accent-warn]/10 text-[--color-accent-warn]",
+  ML: "bg-[#D65C8A]/10 text-[#D65C8A]",
+  CLI: "bg-[#38B8C7]/10 text-[#38B8C7]",
+  API: "bg-[#38B8C7]/10 text-[#38B8C7]",
+  Mobile: "bg-[#6C93C7]/10 text-[#6C93C7]",
+  Desktop: "bg-[--color-text-faint]/10 text-[--color-text-faint]",
+  Utility: "bg-[--color-text-faint]/10 text-[--color-text-faint]",
+  Other: "bg-[--color-text-faint]/10 text-[--color-text-faint]",
 };
 
 export function RepoCard({ repo }: { repo: Repository }) {

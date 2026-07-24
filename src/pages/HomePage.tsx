@@ -4,6 +4,7 @@ import { ArrowRight, Star, Users, GitBranch, Flame } from "lucide-react";
 import { useGithubSnapshot } from "@/hooks/useGithub";
 import { RepoCard } from "@/components/common/RepoCard";
 import { RepoCardSkeleton } from "@/components/common/RepoCardSkeleton";
+import { SyncTerminal } from "@/components/common/SyncTerminal";
 import { siteConfig } from "@/config/site";
 import { useSeo } from "@/hooks/useSeo";
 
@@ -12,64 +13,104 @@ export function HomePage() {
   const { data, isLoading, error } = useGithubSnapshot();
   const pinned = data?.repositories.filter((r) => r.isPinned).slice(0, 6);
 
+  // A short hex string derived from real synced data, not a random fake --
+  // it changes when the underlying numbers change, so it reads as a build
+  // artifact ID rather than decoration.
+  const buildHash = data
+    ? (data.totalStars + data.profile.publicRepos * 7).toString(16).padStart(6, "0").slice(-6)
+    : "------";
+
   return (
     <>
       {/* Hero */}
-      <section className="relative mx-auto max-w-6xl overflow-hidden px-4 pb-16 pt-20 sm:px-6 sm:pt-28">
-        <div className="mesh-bg" aria-hidden="true" />
+      <section className="mx-auto max-w-6xl px-4 pb-16 pt-16 sm:px-6 sm:pt-24">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_1fr]">
+          <div>
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              className="mb-5 flex flex-wrap items-center gap-2"
+            >
+              <span className="rounded-full border border-[--color-border] px-2.5 py-1 font-[--font-mono] text-[11px] text-[--color-text-faint]">
+                {buildHash}
+              </span>
+              <span className="flex items-center gap-1.5 font-[--font-mono] text-[11px] text-[--color-accent]">
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[--color-accent] opacity-60" />
+                  <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[--color-accent]" />
+                </span>
+                online
+              </span>
+              <span className="font-[--font-mono] text-[11px] text-[--color-text-faint]">
+                {data ? `${data.profile.publicRepos} repos · synced live` : "loading"}
+              </span>
+            </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-4 font-[--font-mono] text-xs uppercase tracking-[0.2em] text-[--color-accent-alt]"
-        >
-          {data ? `${data.profile.publicRepos} public repos · syncing live from GitHub` : "Loading profile"}
-        </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: 0.05 }}
+              className="text-balance font-[--font-display] text-[length:--text-4xl] font-extrabold leading-[1.03] tracking-tight"
+            >
+              {data?.profile.name || siteConfig.siteName}
+            </motion.h1>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: 0.05 }}
-          className="max-w-3xl text-balance font-[--font-display] text-[length:--text-4xl] font-semibold leading-[1.05] tracking-tight"
-        >
-          <span className="text-gradient">{data?.profile.name || siteConfig.siteName}</span>
-        </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
+              className="mt-4 max-w-lg text-[length:--text-lg] text-[--color-text-muted]"
+            >
+              {data?.profile.bio || siteConfig.siteDescription}
+            </motion.p>
 
-        <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-          className="mt-4 max-w-xl text-[length:--text-lg] text-[--color-text-muted]"
-        >
-          {data?.profile.bio || siteConfig.siteDescription}
-        </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
+              className="mt-8 flex flex-wrap items-center gap-3"
+            >
+              <Link
+                to="/projects"
+                className="glow-on-hover flex items-center gap-2 rounded-full bg-[--color-accent] px-5 py-2.5 text-sm font-semibold text-[--color-accent-contrast] transition-transform hover:scale-[1.02]"
+              >
+                View projects <ArrowRight size={15} />
+              </Link>
+              <Link
+                to="/contact"
+                className="rounded-full border border-[--color-border] px-5 py-2.5 text-sm font-medium text-[--color-text] transition-colors hover:bg-[--color-bg-subtle]"
+              >
+                Get in touch
+              </Link>
+            </motion.div>
+          </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
-          className="mt-8 flex flex-wrap items-center gap-3"
-        >
-          <Link
-            to="/projects"
-            className="glow-on-hover flex items-center gap-2 rounded-full bg-[--color-accent] px-5 py-2.5 text-sm font-medium text-[--color-accent-contrast] transition-transform hover:scale-[1.02]"
+          <motion.div
+            initial={{ opacity: 0, y: 16, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
+            className="flex justify-center lg:justify-end"
           >
-            View projects <ArrowRight size={15} />
-          </Link>
-          <Link
-            to="/contact"
-            className="rounded-full border border-[--color-border] px-5 py-2.5 text-sm font-medium text-[--color-text] transition-colors hover:bg-[--color-bg-subtle]"
-          >
-            Get in touch
-          </Link>
-        </motion.div>
+            <SyncTerminal data={data} isLoading={isLoading} />
+          </motion.div>
+        </div>
 
-        {/* Live stats row */}
+        {/* Bento stats */}
         {data && (
-          <div className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-[--radius-lg] border border-[--color-border] bg-[--color-border] sm:grid-cols-4">
-            <Stat icon={<Star size={14} />} label="Total stars" value={data.totalStars} />
-            <Stat icon={<Users size={14} />} label="Followers" value={data.profile.followers} />
+          <div className="mt-14 grid grid-cols-2 gap-3 lg:grid-cols-4">
+            <BigStat
+              icon={<Star size={16} />}
+              label="Total stars"
+              value={data.totalStars}
+              className="col-span-2 row-span-1 lg:row-span-2"
+            />
+            <Stat
+              icon={<Users size={14} />}
+              label="Followers"
+              value={data.profile.followers}
+              className="col-span-2 lg:col-span-2"
+            />
             <Stat icon={<GitBranch size={14} />} label="Repositories" value={data.profile.publicRepos} />
             <Stat icon={<Flame size={14} />} label="Current streak" value={`${data.currentStreak}d`} />
           </div>
@@ -86,7 +127,7 @@ export function HomePage() {
       {/* Pinned projects */}
       <section className="mx-auto max-w-6xl px-4 pb-24 sm:px-6">
         <div className="mb-6 flex items-center justify-between">
-          <h2 className="font-[--font-display] text-[length:--text-2xl] font-semibold tracking-tight">
+          <h2 className="font-[--font-display] text-[length:--text-2xl] font-bold tracking-tight">
             Pinned projects
           </h2>
           <Link
@@ -113,18 +154,46 @@ function Stat({
   icon,
   label,
   value,
+  className,
 }: {
   icon: React.ReactNode;
   label: string;
   value: string | number;
+  className?: string;
 }) {
   return (
-    <div className="bg-[--color-surface] p-5">
+    <div
+      className={`rounded-[--radius-lg] border border-[--color-border] bg-[--color-surface] p-5 ${className ?? ""}`}
+    >
       <div className="flex items-center gap-1.5 text-[--color-text-faint]">
         {icon}
         <span className="text-xs uppercase tracking-wide">{label}</span>
       </div>
-      <p className="mt-2 font-[--font-display] text-[length:--text-2xl] font-semibold">
+      <p className="mt-2 font-[--font-display] text-[length:--text-2xl] font-bold">{value}</p>
+    </div>
+  );
+}
+
+function BigStat({
+  icon,
+  label,
+  value,
+  className,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  value: string | number;
+  className?: string;
+}) {
+  return (
+    <div
+      className={`flex flex-col justify-between rounded-[--radius-lg] border border-[--color-accent]/25 bg-gradient-to-br from-[--color-accent]/[0.06] to-transparent p-6 ${className ?? ""}`}
+    >
+      <div className="flex items-center gap-1.5 text-[--color-accent]">
+        {icon}
+        <span className="text-xs font-medium uppercase tracking-wide">{label}</span>
+      </div>
+      <p className="mt-4 font-[--font-display] text-[length:--text-4xl] font-extrabold leading-none lg:mt-0">
         {value}
       </p>
     </div>

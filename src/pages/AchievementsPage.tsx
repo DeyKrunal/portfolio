@@ -55,9 +55,9 @@ export function AchievementsPage() {
               className="flex flex-col gap-3 rounded-[--radius-lg] border border-[--color-border] bg-[--color-surface] p-5"
             >
               <div className="flex items-start justify-between">
-                <Trophy size={18} className="text-[--color-accent-warn]" />
+                <Trophy size={18} className="text-[--color-accent-alt]" />
                 {a.featured && (
-                  <span className="rounded-full bg-[--color-accent-warn]/10 px-2 py-0.5 text-[10px] font-medium text-[--color-accent-warn]">
+                  <span className="rounded-full bg-[--color-accent-alt]/10 px-2 py-0.5 text-[10px] font-medium text-[--color-accent-alt]">
                     Featured
                   </span>
                 )}

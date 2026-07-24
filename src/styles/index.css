@@ -2,32 +2,37 @@
 
 /* ------------------------------------------------------------------ */
 /* DESIGN TOKENS                                                       */
-/* Signature: a single shifting "signal" gradient (accent) that reads  */
-/* as a live status indicator — this is a dev's site, so the accent    */
-/* behaves like a build/CI state light, not a decorative blob.         */
+/* Palette grounded in the site's actual subject: git. The accent trio */
+/* reads as diff colors (add/remove) plus a commit-hash gold, not a    */
+/* generic SaaS blue -- because this site's whole premise is a live    */
+/* git-sync pipeline, not a template that happens to show repos.       */
 /* ------------------------------------------------------------------ */
 :root {
   /* --- Base neutrals (light) --- */
-  --color-bg: 250 250 249;          /* #FAFAF9 */
-  --color-bg-subtle: 244 244 243;   /* #F4F4F3 */
+  --color-bg: 245 246 248;          /* #F5F6F8 cool paper, not cream */
+  --color-bg-subtle: 236 238 242;   /* #ECEEF2 */
   --color-surface: 255 255 255;
   --color-surface-raised: 255 255 255;
-  --color-border: 228 228 226;
-  --color-border-strong: 210 210 207;
-  --color-text: 23 23 22;
-  --color-text-muted: 92 92 89;
-  --color-text-faint: 140 140 136;
+  --color-border: 225 228 234;
+  --color-border-strong: 201 206 218;
+  --color-text: 18 21 28;
+  --color-text-muted: 84 93 112;
+  --color-text-faint: 131 140 158;
 
-  /* --- Signal accent (the "build state" hue) --- */
-  --color-accent: 37 99 235;        /* #2563EB running-blue */
-  --color-accent-alt: 16 185 129;   /* #10B981 success-green */
-  --color-accent-warn: 217 119 6;   /* #D97706 amber */
+  /* --- Accent trio: diff-add green (primary), commit-gold (secondary),
+     diff-remove rust + violet (tertiary, category variety only) ---
+     Light-mode accents are deepened from their dark-mode counterparts
+     to hold AA contrast against a white/near-white surface. */
+  --color-accent: 30 154 87;        /* #1E9A57 deepened green */
+  --color-accent-alt: 185 119 15;   /* #B9770F deepened gold */
+  --color-accent-warn: 192 67 46;   /* #C0432E deepened rust */
+  --color-accent-violet: 108 90 214; /* #6C5AD6 deepened violet */
   --color-accent-contrast: 255 255 255;
 
   /* --- Elevation --- */
-  --shadow-sm: 0 1px 2px rgba(23, 23, 22, 0.04);
-  --shadow-md: 0 4px 16px -4px rgba(23, 23, 22, 0.10), 0 1px 2px rgba(23,23,22,0.06);
-  --shadow-lg: 0 16px 48px -12px rgba(23, 23, 22, 0.18);
+  --shadow-sm: 0 1px 2px rgba(18, 21, 28, 0.04);
+  --shadow-md: 0 4px 16px -4px rgba(18, 21, 28, 0.10), 0 1px 2px rgba(18,21,28,0.06);
+  --shadow-lg: 0 16px 48px -12px rgba(18, 21, 28, 0.18);
   --shadow-glow: 0 0 0 1px rgb(var(--color-accent) / 0.15), 0 8px 32px -8px rgb(var(--color-accent) / 0.35);
 
   /* --- Radius --- */
@@ -37,8 +42,8 @@
   --radius-xl: 24px;
 
   /* --- Type scale (fluid, clamp-based) --- */
-  --font-display: "Fragment", "Cabinet Grotesk", "Söhne", ui-sans-serif, system-ui, sans-serif;
-  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cabinet Grotesk", "General Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
 
   --text-xs: clamp(0.75rem, 0.72rem + 0.1vw, 0.8125rem);
@@ -73,20 +78,21 @@
 }
 
 .dark {
-  --color-bg: 10 10 10;
-  --color-bg-subtle: 17 17 16;
-  --color-surface: 20 20 19;
-  --color-surface-raised: 27 27 26;
-  --color-border: 40 40 38;
-  --color-border-strong: 58 58 55;
-  --color-text: 245 245 244;
-  --color-text-muted: 168 168 164;
-  --color-text-faint: 115 115 112;
+  --color-bg: 11 14 20;             /* #0B0E14 ink, not pure black */
+  --color-bg-subtle: 16 20 28;      /* #10141C */
+  --color-surface: 20 26 38;        /* #141A26 */
+  --color-surface-raised: 27 34 48; /* #1B2230 */
+  --color-border: 36 44 61;         /* #242C3D */
+  --color-border-strong: 51 61 84;  /* #333D54 */
+  --color-text: 237 239 244;        /* #EDEFF4 cool white */
+  --color-text-muted: 153 163 184;  /* #99A3B8 */
+  --color-text-faint: 98 108 130;   /* #626C82 */
 
-  --color-accent: 96 165 250;       /* lighter running-blue for dark bg */
-  --color-accent-alt: 52 211 153;
-  --color-accent-warn: 251 191 36;
-  --color-accent-contrast: 10 10 10;
+  --color-accent: 52 199 123;        /* #34C77B diff-add green */
+  --color-accent-alt: 242 169 59;    /* #F2A93B commit-gold */
+  --color-accent-warn: 225 97 77;    /* #E1614D diff-remove rust */
+  --color-accent-violet: 139 127 240; /* #8B7FF0 */
+  --color-accent-contrast: 7 21 13;   /* near-black green-tint, for text on bright green */
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 20px -4px rgba(0, 0, 0, 0.5);
@@ -98,19 +104,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not(.light):not(.dark) {
-    --color-bg: 10 10 10;
-    --color-bg-subtle: 17 17 16;
-    --color-surface: 20 20 19;
-    --color-surface-raised: 27 27 26;
-    --color-border: 40 40 38;
-    --color-border-strong: 58 58 55;
-    --color-text: 245 245 244;
-    --color-text-muted: 168 168 164;
-    --color-text-faint: 115 115 112;
-    --color-accent: 96 165 250;
-    --color-accent-alt: 52 211 153;
-    --color-accent-warn: 251 191 36;
-    --color-accent-contrast: 10 10 10;
+    --color-bg: 11 14 20;
+    --color-bg-subtle: 16 20 28;
+    --color-surface: 20 26 38;
+    --color-surface-raised: 27 34 48;
+    --color-border: 36 44 61;
+    --color-border-strong: 51 61 84;
+    --color-text: 237 239 244;
+    --color-text-muted: 153 163 184;
+    --color-text-faint: 98 108 130;
+    --color-accent: 52 199 123;
+    --color-accent-alt: 242 169 59;
+    --color-accent-warn: 225 97 77;
+    --color-accent-violet: 139 127 240;
+    --color-accent-contrast: 7 21 13;
     color-scheme: dark;
   }
 }
@@ -128,6 +135,7 @@
   --color-accent: rgb(var(--color-accent));
   --color-accent-alt: rgb(var(--color-accent-alt));
   --color-accent-warn: rgb(var(--color-accent-warn));
+  --color-accent-violet: rgb(var(--color-accent-violet));
   --color-accent-contrast: rgb(var(--color-accent-contrast));
 
   --font-family-display: var(--font-display);
@@ -191,82 +199,11 @@
   }
 
   .signal-dot {
-    box-shadow: 0 0 0 3px rgb(var(--color-accent-alt) / 0.15);
-  }
-
-  /* Hero mesh gradient: three soft, slow-drifting radial blobs in the
-     accent hues. Deliberately subtle (low opacity, blurred, behind
-     content) -- a wash of color and depth, not a decorative centerpiece.
-     Respects prefers-reduced-motion via the drift animation below. */
-  .mesh-bg {
-    position: absolute;
-    inset: -10% -10% auto -10%;
-    height: 130%;
-    z-index: -1;
-    overflow: hidden;
-    pointer-events: none;
-  }
-
-  .mesh-bg::before,
-  .mesh-bg::after {
-    content: "";
-    position: absolute;
-    width: 60vw;
-    height: 60vw;
-    max-width: 640px;
-    max-height: 640px;
-    border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.16;
-    animation: mesh-drift 24s ease-in-out infinite alternate;
-  }
-
-  .mesh-bg::before {
-    top: -10%;
-    left: -5%;
-    background: radial-gradient(circle, rgb(var(--color-accent)), transparent 70%);
-  }
-
-  .mesh-bg::after {
-    top: 5%;
-    right: -10%;
-    background: radial-gradient(circle, rgb(var(--color-accent-alt)), transparent 70%);
-    animation-delay: -8s;
-  }
-
-  @keyframes mesh-drift {
-    from {
-      transform: translate(0, 0) scale(1);
-    }
-    to {
-      transform: translate(4%, 6%) scale(1.08);
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .mesh-bg::before,
-    .mesh-bg::after {
-      animation: none;
-    }
-  }
-
-  /* Gradient text for hero headlines -- used sparingly (one heading per
-     page, at most) so it reads as an intentional accent, not a theme. */
-  .text-gradient {
-    background: linear-gradient(
-      100deg,
-      rgb(var(--color-text)) 20%,
-      rgb(var(--color-accent)) 55%,
-      rgb(var(--color-accent-alt)) 90%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    box-shadow: 0 0 0 3px rgb(var(--color-accent) / 0.15);
   }
 
   /* Subtle grain, applied as a fixed full-viewport overlay so it doesn't
-     tile visibly per-element. Extremely low opacity -- felt more than seen,
-     the way film grain or a premium print texture reads. */
+     tile visibly per-element. Extremely low opacity -- felt more than seen. */
   .grain-overlay {
     position: fixed;
     inset: 0;
@@ -277,8 +214,8 @@
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
   }
 
-  /* Glow-on-hover for primary CTAs -- makes the existing --shadow-glow
-     token (defined but previously unused) actually do something. */
+  /* Glow-on-hover for primary CTAs and cards -- makes --shadow-glow do
+     something tactile rather than sitting unused in the token file. */
   .glow-on-hover {
     transition: box-shadow var(--duration-base) var(--ease-out-expo);
   }

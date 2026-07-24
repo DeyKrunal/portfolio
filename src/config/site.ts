@@ -1,4 +1,3 @@
-
 export const siteConfig = {
   githubUsername: "DeyKrunal",
   siteName: "Krunal Dey",
@@ -7,10 +6,10 @@ export const siteConfig = {
     "Software engineer building fast, well-crafted products. Projects sync automatically from GitHub.",
   siteUrl: "https://DeyKrunal.github.io",
   social: {
-    github: import.meta.env.VITE_GITHUB_LINK ,
-    linkedin: import.meta.env.VITE_LINKEDIN_LINK , // fill in Admin > Settings, stored in Firestore, not hardcoded
+    github: "https://github.com/DeyKrunal",
+    linkedin: "", // fill in Admin > Settings, stored in Firestore, not hardcoded
     twitter: "",
-    email: import.meta.env.VITE_EMAIL_LINK ,
+    email: "",
   },
   nav: [
     { label: "Projects", href: "/projects" },

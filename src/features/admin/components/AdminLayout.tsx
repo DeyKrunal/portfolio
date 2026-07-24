@@ -52,8 +52,8 @@ export function AdminLayout() {
       <aside className="hidden w-60 shrink-0 flex-col border-r border-[--color-border] bg-[--color-surface] md:flex">
         <div className="flex h-16 items-center gap-2 border-b border-[--color-border] px-5">
           <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[--color-accent-alt] opacity-60" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-[--color-accent-alt]" />
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[--color-accent] opacity-60" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-[--color-accent]" />
           </span>
           <span className="font-[--font-display] text-sm font-semibold">Admin</span>
         </div>
