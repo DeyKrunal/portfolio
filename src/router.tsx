@@ -1,9 +1,9 @@
+import { PageLoader } from "@/components/common/PageLoader";
+import { RootLayout } from "@/components/layout/RootLayout";
+import { ProtectedRoute } from "@/features/admin/components/ProtectedRoute";
+import { NotFoundPage } from "@/pages/NotFoundPage";
 import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import { RootLayout } from "@/components/layout/RootLayout";
-import { PageLoader } from "@/components/common/PageLoader";
-import { NotFoundPage } from "@/pages/NotFoundPage";
-import { ProtectedRoute } from "@/features/admin/components/ProtectedRoute";
 
 // --- Public pages ---
 const HomePage = lazy(() => import("@/pages/HomePage").then((m) => ({ default: m.HomePage })));
@@ -173,4 +173,8 @@ export const router = createBrowserRouter([
       },
     ],
   },
-]);
+],
+{
+  basename: "/portfolio",
+}
+);
