@@ -33,6 +33,9 @@ const GalleryPage = lazy(() =>
 const TestimonialsPage = lazy(() =>
   import("@/pages/TestimonialsPage").then((m) => ({ default: m.TestimonialsPage }))
 );
+const ServicesPage = lazy(() =>
+  import("@/pages/ServicesPage").then((m) => ({ default: m.ServicesPage }))
+);
 const ResumePage = lazy(() => import("@/pages/ResumePage").then((m) => ({ default: m.ResumePage })));
 const NowPlayingPage = lazy(() =>
   import("@/pages/NowPlayingPage").then((m) => ({ default: m.NowPlayingPage }))
@@ -92,6 +95,11 @@ const AdminTestimonialsPage = lazy(() =>
     default: m.AdminTestimonialsPage,
   }))
 );
+const AdminServicesPage = lazy(() =>
+  import("@/features/admin/pages/AdminServicesPage").then((m) => ({
+    default: m.AdminServicesPage,
+  }))
+);
 const AdminBlogPage = lazy(() =>
   import("@/features/admin/pages/AdminBlogPage").then((m) => ({ default: m.AdminBlogPage }))
 );
@@ -112,8 +120,7 @@ function withSuspense(Component: React.LazyExoticComponent<() => React.JSX.Eleme
   );
 }
 
-export const router = createBrowserRouter(
-[
+export const router = createBrowserRouter([
   {
     element: <RootLayout />,
     errorElement: <NotFoundPage />,
@@ -129,6 +136,7 @@ export const router = createBrowserRouter(
       { path: "/achievements", element: withSuspense(AchievementsPage) },
       { path: "/gallery", element: withSuspense(GalleryPage) },
       { path: "/testimonials", element: withSuspense(TestimonialsPage) },
+      { path: "/services", element: withSuspense(ServicesPage) },
       { path: "/resume", element: withSuspense(ResumePage) },
       { path: "/now-playing", element: withSuspense(NowPlayingPage) },
       { path: "/analytics", element: withSuspense(GithubAnalyticsPage) },
@@ -157,6 +165,7 @@ export const router = createBrowserRouter(
           { path: "achievements", element: withSuspense(AdminAchievementsPage) },
           { path: "gallery", element: withSuspense(AdminGalleryPage) },
           { path: "testimonials", element: withSuspense(AdminTestimonialsPage) },
+          { path: "services", element: withSuspense(AdminServicesPage) },
           { path: "blog", element: withSuspense(AdminBlogPage) },
           { path: "media", element: withSuspense(AdminMediaLibraryPage) },
           { path: "settings", element: withSuspense(AdminSettingsPage) },
@@ -164,8 +173,4 @@ export const router = createBrowserRouter(
       },
     ],
   },
-],
-{
-  basename: "/portfolio",
-}
-);
+]);

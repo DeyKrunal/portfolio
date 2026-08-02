@@ -97,6 +97,7 @@ export interface TestimonialEntry {
   authorCompany: string | null;
   authorAvatarUrl: string | null;
   quote: string;
+  rating: number | null; // 1-5, optional
   linkUrl: string | null;
   featured: boolean;
   order: number;
@@ -115,4 +116,12 @@ export interface NowPlayingSettings {
   trackUrl: string | null;
   albumArtUrl: string | null;
   updatedAt: string | null;
+}
+
+export interface ServiceEntry {
+  id: string;
+  title: string;
+  description: string;
+  iconUrl: string | null;
+  order: number;
 }

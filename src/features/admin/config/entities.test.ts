@@ -7,6 +7,7 @@ import {
   achievementsConfig,
   galleryConfig,
   testimonialsConfig,
+  servicesConfig,
 } from "@/features/admin/config/entities";
 
 const ALL_CONFIGS = [
@@ -17,6 +18,7 @@ const ALL_CONFIGS = [
   achievementsConfig,
   galleryConfig,
   testimonialsConfig,
+  servicesConfig,
 ];
 
 describe("admin entity configs", () => {

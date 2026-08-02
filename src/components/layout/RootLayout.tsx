@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageTransition } from "@/components/layout/PageTransition";
+import { BackToTop } from "@/components/common/BackToTop";
 
 export function RootLayout() {
   return (
@@ -19,6 +20,7 @@ export function RootLayout() {
         </PageTransition>
       </main>
       <Footer />
+      <BackToTop />
     </div>
   );
 }

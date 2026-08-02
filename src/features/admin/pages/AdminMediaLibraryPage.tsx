@@ -69,7 +69,7 @@ export function AdminMediaLibraryPage() {
       </p>
 
       {!firebaseEnabled && (
-        <p className="mt-4 rounded-[--radius-md] border border-[--color-accent-warn]/30 bg-[--color-accent-warn]/5 px-4 py-3 text-sm text-[--color-accent-warn]">
+        <p className="mt-4 rounded-[--radius-md] border border-[--color-warning]/30 bg-[--color-warning]/5 px-4 py-3 text-sm text-[--color-warning]">
           Firebase Storage isn't configured yet.
         </p>
       )}

@@ -77,7 +77,7 @@ export function AdminBlogPage() {
               <span
                 className={`flex h-6 w-6 items-center justify-center rounded-full ${
                   post.status === "published"
-                    ? "bg-[--color-accent-alt]/10 text-[--color-accent-alt]"
+                    ? "bg-[--color-accent]/10 text-[--color-accent]"
                     : "bg-[--color-text-faint]/10 text-[--color-text-faint]"
                 }`}
                 title={post.status}

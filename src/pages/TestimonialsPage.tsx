@@ -1,4 +1,4 @@
-import { Quote, MessageSquareQuote } from "lucide-react";
+import { Quote, Star, MessageSquareQuote } from "lucide-react";
 import { useFirestoreCollection } from "@/hooks/useFirestoreCollection";
 import { EmptyState } from "@/components/common/EmptyState";
 import { useSeo } from "@/hooks/useSeo";
@@ -14,7 +14,10 @@ export function TestimonialsPage() {
 
   return (
     <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-      <h1 className="font-[--font-display] text-[length:--text-3xl] font-semibold tracking-tight">
+      <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-[--color-accent-from]">
+        Kind words
+      </p>
+      <h1 className="font-[--font-display] text-[length:--text-3xl] font-bold tracking-tight">
         Testimonials
       </h1>
 
@@ -39,12 +42,26 @@ export function TestimonialsPage() {
       {testimonials && testimonials.length > 0 && (
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {testimonials.map((t) => (
-            <figure
-              key={t.id}
-              className="flex flex-col gap-4 rounded-[--radius-lg] border border-[--color-border] bg-[--color-surface] p-6"
-            >
-              <Quote size={20} className="text-[--color-accent]" />
-              <blockquote className="flex-1 text-sm text-[--color-text-muted]">
+            <figure key={t.id} className="card-premium flex flex-col gap-4 p-6">
+              <div className="flex items-center justify-between">
+                <Quote size={20} className="text-[--color-accent-from]" />
+                {t.rating != null && t.rating > 0 && (
+                  <div className="flex items-center gap-0.5" aria-label={`${t.rating} out of 5 stars`}>
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <Star
+                        key={i}
+                        size={13}
+                        className={
+                          i < t.rating!
+                            ? "fill-[--color-warning] text-[--color-warning]"
+                            : "text-[--color-border-strong]"
+                        }
+                      />
+                    ))}
+                  </div>
+                )}
+              </div>
+              <blockquote className="flex-1 text-sm leading-relaxed text-[--color-text-muted]">
                 "{t.quote}"
               </blockquote>
               <figcaption className="flex items-center gap-3">

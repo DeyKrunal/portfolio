@@ -1,117 +1,98 @@
 import { Mail } from "lucide-react";
 import { Link } from "react-router-dom";
-import { GithubIcon, LinkedinIcon, XIcon } from "@/components/ui/BrandIcons";
+import {
+  GithubIcon,
+  LinkedinIcon,
+  XIcon,
+  InstagramIcon,
+  DribbbleIcon,
+  BehanceIcon,
+  YoutubeIcon,
+} from "@/components/ui/BrandIcons";
 import { siteConfig } from "@/config/site";
 import { useGithubSnapshot } from "@/hooks/useGithub";
 import { useSocialLinks } from "@/hooks/useSocialLinks";
 
+/**
+ * Kept deliberately minimal (logo, a light nav row, social icons,
+ * copyright) rather than a full sitemap block -- the command palette
+ * (Ctrl/Cmd+K) already gives full-site discovery.
+ */
 export function Footer() {
   const { data } = useGithubSnapshot();
   const social = useSocialLinks();
 
+  const socialIcons = [
+    { href: social.github, label: "GitHub", Icon: GithubIcon, external: true },
+    { href: social.linkedin, label: "LinkedIn", Icon: LinkedinIcon, external: true },
+    { href: social.twitter, label: "Twitter", Icon: XIcon, external: true },
+    { href: social.instagram, label: "Instagram", Icon: InstagramIcon, external: true },
+    { href: social.dribbble, label: "Dribbble", Icon: DribbbleIcon, external: true },
+    { href: social.behance, label: "Behance", Icon: BehanceIcon, external: true },
+    { href: social.youtube, label: "YouTube", Icon: YoutubeIcon, external: true },
+    social.email
+      ? { href: `mailto:${social.email}`, label: "Email", Icon: Mail, external: false }
+      : null,
+  ].filter((item): item is NonNullable<typeof item> => Boolean(item?.href));
+
   return (
     <footer className="border-t border-[--color-border]">
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
-          <div>
-            <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-[--color-text-faint]">
-              Explore
-            </p>
-            <ul className="space-y-2">
-              {siteConfig.footerNav.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    to={item.href}
-                    className="text-sm text-[--color-text-muted] hover:text-[--color-text]"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-[--color-text-faint]">
-              Legal
-            </p>
-            <ul className="space-y-2">
-              {siteConfig.footerLegal.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    to={item.href}
-                    className="text-sm text-[--color-text-muted] hover:text-[--color-text]"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-[--color-text-faint]">
-              Connect
-            </p>
-            <div className="flex items-center gap-3">
+      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+        <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
+          <Link to="/" className="font-[--font-display] text-sm font-semibold tracking-tight">
+            {siteConfig.siteName}
+          </Link>
+
+          <nav
+            className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2"
+            aria-label="Footer"
+          >
+            {siteConfig.nav.map((item) => (
+              <Link
+                key={item.href}
+                to={item.href}
+                className="text-sm text-[--color-text-muted] hover:text-[--color-text]"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="flex items-center gap-3">
+            {socialIcons.map(({ href, label, Icon, external }) => (
               <a
-                href={social.github}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="GitHub"
+                key={label}
+                href={href}
+                target={external ? "_blank" : undefined}
+                rel={external ? "noreferrer" : undefined}
+                aria-label={label}
                 className="text-[--color-text-muted] transition-colors hover:text-[--color-text]"
               >
-                <GithubIcon width={18} height={18} />
+                <Icon width={17} height={17} />
               </a>
-              {social.linkedin && (
-                <a
-                  href={social.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="LinkedIn"
-                  className="text-[--color-text-muted] transition-colors hover:text-[--color-text]"
-                >
-                  <LinkedinIcon width={18} height={18} />
-                </a>
-              )}
-              {social.twitter && (
-                <a
-                  href={social.twitter}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Twitter"
-                  className="text-[--color-text-muted] transition-colors hover:text-[--color-text]"
-                >
-                  <XIcon width={18} height={18} />
-                </a>
-              )}
-              {social.email && (
-                <a
-                  href={`mailto:${social.email}`}
-                  aria-label="Email"
-                  className="text-[--color-text-muted] transition-colors hover:text-[--color-text]"
-                >
-                  <Mail size={18} />
-                </a>
-              )}
-            </div>
+            ))}
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 border-t border-[--color-border] pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm text-[--color-text-muted]">
-            © {new Date().getFullYear()} {siteConfig.siteName}. Built with React, shipped on
-            GitHub Pages.
+        <div className="mt-8 flex flex-col items-center gap-2 border-t border-[--color-border] pt-6 text-xs text-[--color-text-faint] sm:flex-row sm:justify-between">
+          <p>
+            © {new Date().getFullYear()} {siteConfig.siteName}. All rights reserved.
           </p>
-          {data?.generatedAt && (
-            <p className="text-xs text-[--color-text-faint]">
-              GitHub data last synced{" "}
-              <time dateTime={data.generatedAt}>
-                {new Date(data.generatedAt).toLocaleString(undefined, {
-                  dateStyle: "medium",
-                  timeStyle: "short",
-                })}
-              </time>
-            </p>
-          )}
+          <div className="flex items-center gap-4">
+            {siteConfig.footerLegal.map((item) => (
+              <Link key={item.href} to={item.href} className="hover:text-[--color-text-muted]">
+                {item.label}
+              </Link>
+            ))}
+            {data?.generatedAt && (
+              <span>
+                Synced{" "}
+                <time dateTime={data.generatedAt}>
+                  {new Date(data.generatedAt).toLocaleDateString(undefined, { dateStyle: "medium" })}
+                </time>
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </footer>

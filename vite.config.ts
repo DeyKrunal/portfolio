@@ -1,19 +1,18 @@
-import tailwindcss from "@tailwindcss/vite";
-import react from "@vitejs/plugin-react";
-import path from "path";
 import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 import { VitePWA } from "vite-plugin-pwa";
+import path from "path";
 
 // GitHub Pages serves a root-domain repo (username.github.io) from "/".
 // If you rename this to a project-page repo, set VITE_BASE_PATH="/repo-name/"
 // in the build environment instead.
 export default defineConfig({
-  base: process.env.VITE_BASE_PATH || "/portfolio/",
+  base: process.env.VITE_BASE_PATH || "/",
   plugins: [
     react(),
     tailwindcss(),
     VitePWA({
-      base: "/portfolio/",
       registerType: "autoUpdate",
       includeAssets: ["favicon.svg", "apple-touch-icon.png"],
       manifest: {
@@ -21,16 +20,16 @@ export default defineConfig({
         short_name: "Krunal Dey",
         description:
           "Software engineer building fast, well-crafted products. Projects sync automatically from GitHub.",
-        theme_color: "#0A0A0A",
-        background_color: "#0A0A0A",
+        theme_color: "#07090F",
+        background_color: "#07090F",
         display: "standalone",
-        start_url: "/portfolio/",
-        scope: "/portfolio/",
+        start_url: "/",
+        scope: "/",
         icons: [
-          { src: "/portfolio/icon-192.png", sizes: "192x192", type: "image/png" },
-          { src: "/portfolio/icon-512.png", sizes: "512x512", type: "image/png" },
+          { src: "/icon-192.png", sizes: "192x192", type: "image/png" },
+          { src: "/icon-512.png", sizes: "512x512", type: "image/png" },
           {
-            src: "/portfolio/icon-maskable-512.png",
+            src: "/icon-maskable-512.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable",

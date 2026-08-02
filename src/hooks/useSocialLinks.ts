@@ -5,6 +5,10 @@ import { siteConfig } from "@/config/site";
 interface SocialDoc extends Record<string, unknown> {
   linkedin: string;
   twitter: string;
+  instagram: string;
+  dribbble: string;
+  behance: string;
+  youtube: string;
   email: string;
 }
 
@@ -27,6 +31,10 @@ export function useSocialLinks() {
     github: siteConfig.social.github, // structural fact, not a setting
     linkedin: (data?.linkedin as string) || siteConfig.social.linkedin,
     twitter: (data?.twitter as string) || siteConfig.social.twitter,
+    instagram: (data?.instagram as string) || siteConfig.social.instagram,
+    dribbble: (data?.dribbble as string) || siteConfig.social.dribbble,
+    behance: (data?.behance as string) || siteConfig.social.behance,
+    youtube: (data?.youtube as string) || siteConfig.social.youtube,
     email: (data?.email as string) || siteConfig.social.email,
   };
 }

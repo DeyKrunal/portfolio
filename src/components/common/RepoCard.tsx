@@ -3,69 +3,103 @@ import { Star, GitFork, ExternalLink } from "lucide-react";
 import type { Repository } from "@/types/github";
 import { cn } from "@/lib/cn";
 
+// Kept deliberately restrained: most categories share a calm neutral tag,
+// with color reserved for a handful of categories where it adds real
+// signal (Frontend/Backend/Full Stack/AI/ML/CLI/API) rather than forcing
+// a distinct hue onto all 15.
 const CATEGORY_STYLES: Record<string, string> = {
-  Frontend: "bg-blue-500/10 text-blue-400",
-  Backend: "bg-purple-500/10 text-purple-400",
-  "Full Stack": "bg-indigo-500/10 text-indigo-400",
-  AI: "bg-pink-500/10 text-pink-400",
-  ML: "bg-rose-500/10 text-rose-400",
-  CLI: "bg-amber-500/10 text-amber-400",
-  Mobile: "bg-teal-500/10 text-teal-400",
-  Desktop: "bg-cyan-500/10 text-cyan-400",
-  Library: "bg-emerald-500/10 text-emerald-400",
-  Tool: "bg-lime-500/10 text-lime-500",
-  Game: "bg-fuchsia-500/10 text-fuchsia-400",
-  API: "bg-orange-500/10 text-orange-400",
-  Utility: "bg-slate-500/10 text-slate-400",
-  Research: "bg-violet-500/10 text-violet-400",
-  Other: "bg-neutral-500/10 text-neutral-400",
+  Frontend: "bg-[--color-accent-from]/10 text-[--color-accent-from]",
+  Library: "bg-[--color-accent-from]/10 text-[--color-accent-from]",
+  Backend: "bg-[--color-accent-to]/10 text-[--color-accent-to]",
+  Tool: "bg-[--color-accent-to]/10 text-[--color-accent-to]",
+  AI: "bg-[--color-cyan]/10 text-[--color-cyan]",
+  ML: "bg-[--color-cyan]/10 text-[--color-cyan]",
+  CLI: "bg-[--color-success]/10 text-[--color-success]",
+  API: "bg-[--color-success]/10 text-[--color-success]",
+  Mobile: "bg-[--color-text-faint]/10 text-[--color-text-faint]",
+  Desktop: "bg-[--color-text-faint]/10 text-[--color-text-faint]",
+  Game: "bg-[--color-text-faint]/10 text-[--color-text-faint]",
+  Utility: "bg-[--color-text-faint]/10 text-[--color-text-faint]",
+  Research: "bg-[--color-text-faint]/10 text-[--color-text-faint]",
+  Other: "bg-[--color-text-faint]/10 text-[--color-text-faint]",
 };
 
-export function RepoCard({ repo }: { repo: Repository }) {
+export function RepoCard({ repo, featured = false }: { repo: Repository; featured?: boolean }) {
+  const isFullStack = repo.category === "Full Stack";
+
   return (
     <Link
       to={`/projects/${repo.name}`}
-      className="group flex flex-col gap-3 rounded-[--radius-lg] border border-[--color-border] bg-[--color-surface] p-5 shadow-[--shadow-sm] transition-all duration-200 hover:-translate-y-0.5 hover:border-[--color-accent]/40 hover:shadow-[--shadow-glow]"
+      className={cn(
+        "card-premium group relative flex flex-col overflow-hidden",
+        featured && "sm:col-span-2"
+      )}
     >
-      <div className="flex items-start justify-between gap-2">
-        <h3 className="font-[--font-display] text-base font-semibold text-[--color-text] group-hover:text-[--color-accent]">
-          {repo.name}
-        </h3>
-        <span
-          className={cn(
-            "shrink-0 rounded-full px-2 py-0.5 text-xs font-medium",
-            CATEGORY_STYLES[repo.category] ?? CATEGORY_STYLES.Other
+      {featured && (
+        <div className="relative aspect-[21/9] overflow-hidden bg-[--color-bg-subtle]">
+          <img
+            src={repo.ogImageUrl}
+            alt=""
+            loading="lazy"
+            className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            onError={(e) => {
+              e.currentTarget.style.display = "none";
+            }}
+          />
+          <span className="absolute left-4 top-4 rounded-full bg-black/50 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-white backdrop-blur-sm">
+            Featured
+          </span>
+        </div>
+      )}
+
+      <div className="flex flex-1 flex-col gap-3 p-5">
+        <div className="flex items-start justify-between gap-2">
+          <h3
+            className={cn(
+              "font-[--font-display] font-semibold text-[--color-text] transition-colors group-hover:text-[--color-accent-from]",
+              featured ? "text-lg" : "text-base"
+            )}
+          >
+            {repo.name}
+          </h3>
+          <span
+            className={cn(
+              "shrink-0 rounded-full px-2 py-0.5 text-xs font-medium",
+              isFullStack
+                ? "bg-gradient-to-r from-[--color-accent-from] to-[--color-accent-to] text-white"
+                : (CATEGORY_STYLES[repo.category] ?? CATEGORY_STYLES.Other)
+            )}
+          >
+            {repo.category}
+          </span>
+        </div>
+
+        <p className={cn("text-sm text-[--color-text-muted]", featured ? "line-clamp-3" : "line-clamp-2")}>
+          {repo.description || "No description provided."}
+        </p>
+
+        <div className="mt-auto flex items-center gap-4 pt-2 text-xs text-[--color-text-faint]">
+          {repo.primaryLanguage && (
+            <span className="flex items-center gap-1.5">
+              <span
+                className="h-2 w-2 rounded-full"
+                style={{ backgroundColor: repo.languages[0]?.color ?? "#999" }}
+              />
+              {repo.primaryLanguage}
+            </span>
           )}
-        >
-          {repo.category}
-        </span>
-      </div>
-
-      <p className="line-clamp-2 text-sm text-[--color-text-muted]">
-        {repo.description || "No description provided."}
-      </p>
-
-      <div className="mt-auto flex items-center gap-4 pt-2 text-xs text-[--color-text-faint]">
-        {repo.primaryLanguage && (
-          <span className="flex items-center gap-1.5">
-            <span
-              className="h-2 w-2 rounded-full"
-              style={{ backgroundColor: repo.languages[0]?.color ?? "#999" }}
-            />
-            {repo.primaryLanguage}
+          <span className="flex items-center gap-1">
+            <Star size={12} /> {repo.stargazerCount}
           </span>
-        )}
-        <span className="flex items-center gap-1">
-          <Star size={12} /> {repo.stargazerCount}
-        </span>
-        <span className="flex items-center gap-1">
-          <GitFork size={12} /> {repo.forkCount}
-        </span>
-        {repo.homepageUrl && (
-          <span className="ml-auto flex items-center gap-1 text-[--color-accent]">
-            <ExternalLink size={12} /> Live
+          <span className="flex items-center gap-1">
+            <GitFork size={12} /> {repo.forkCount}
           </span>
-        )}
+          {repo.homepageUrl && (
+            <span className="ml-auto flex items-center gap-1 text-[--color-accent-from]">
+              <ExternalLink size={12} /> Live
+            </span>
+          )}
+        </div>
       </div>
     </Link>
   );

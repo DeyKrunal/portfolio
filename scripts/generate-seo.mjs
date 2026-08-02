@@ -28,6 +28,7 @@ const STATIC_ROUTES = [
   "/achievements",
   "/gallery",
   "/testimonials",
+  "/services",
   "/resume",
   "/now-playing",
   "/analytics",

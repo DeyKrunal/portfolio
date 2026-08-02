@@ -1,4 +1,3 @@
-
 export const siteConfig = {
   githubUsername: "DeyKrunal",
   siteName: "Krunal Dey",
@@ -7,10 +6,14 @@ export const siteConfig = {
     "Software engineer building fast, well-crafted products. Projects sync automatically from GitHub.",
   siteUrl: "https://DeyKrunal.github.io",
   social: {
-    github: import.meta.env.VITE_GITHUB_LINK ,
-    linkedin: import.meta.env.VITE_LINKEDIN_LINK , // fill in Admin > Settings, stored in Firestore, not hardcoded
+    github: "https://github.com/DeyKrunal",
+    linkedin: "", // fill in Admin > Settings, stored in Firestore, not hardcoded
     twitter: "",
-    email: import.meta.env.VITE_EMAIL_LINK ,
+    instagram: "",
+    dribbble: "",
+    behance: "",
+    youtube: "",
+    email: "",
   },
   nav: [
     { label: "Projects", href: "/projects" },
@@ -18,17 +21,6 @@ export const siteConfig = {
     { label: "Blog", href: "/blog" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
-  ],
-  footerNav: [
-    { label: "Skills", href: "/skills" },
-    { label: "Education", href: "/education" },
-    { label: "Certificates", href: "/certificates" },
-    { label: "Achievements", href: "/achievements" },
-    { label: "Gallery", href: "/gallery" },
-    { label: "Testimonials", href: "/testimonials" },
-    { label: "Resume", href: "/resume" },
-    { label: "Now Playing", href: "/now-playing" },
-    { label: "GitHub Analytics", href: "/analytics" },
   ],
   footerLegal: [
     { label: "Privacy", href: "/privacy" },

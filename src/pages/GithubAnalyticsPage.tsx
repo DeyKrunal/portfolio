@@ -20,7 +20,7 @@ export function GithubAnalyticsPage() {
   if (error || !data) {
     return (
       <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
-        <p className="rounded-[--radius-md] border border-[--color-accent-warn]/30 bg-[--color-accent-warn]/5 px-4 py-3 text-sm text-[--color-accent-warn]">
+        <p className="rounded-[--radius-md] border border-[--color-warning]/30 bg-[--color-warning]/5 px-4 py-3 text-sm text-[--color-warning]">
           GitHub data hasn't synced yet. Run <code>npm run fetch:github</code> or wait for the
           sync Action to complete.
         </p>

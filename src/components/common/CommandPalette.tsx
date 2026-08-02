@@ -34,6 +34,7 @@ const STATIC_PAGES: SearchResult[] = [
   { id: "achievements", title: "Achievements", href: "/achievements", category: "Page", icon: FileText },
   { id: "gallery", title: "Gallery", href: "/gallery", category: "Page", icon: FileText },
   { id: "testimonials", title: "Testimonials", href: "/testimonials", category: "Page", icon: FileText },
+  { id: "services", title: "Services", href: "/services", category: "Page", icon: FileText },
   { id: "resume", title: "Resume", href: "/resume", category: "Page", icon: FileText },
   { id: "analytics", title: "GitHub Analytics", href: "/analytics", category: "Page", icon: FileText },
   { id: "blog", title: "Blog", href: "/blog", category: "Page", icon: FileText },
