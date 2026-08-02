@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export function NotFoundPage() {
   return (
     <section className="mx-auto flex max-w-2xl flex-col items-center px-4 py-32 text-center sm:px-6">
-      <p className="font-[--font-mono] text-sm text-[--color-accent-warn]">404</p>
+      <p className="font-[--font-mono] text-sm text-[--color-warning]">404</p>
       <h1 className="mt-3 font-[--font-display] text-[length:--text-3xl] font-semibold tracking-tight">
         This page hasn't been pushed yet
       </h1>

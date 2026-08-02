@@ -28,14 +28,14 @@ export function AdminLoginPage() {
         </p>
 
         {!firebaseEnabled && (
-          <p className="mt-6 flex items-start gap-2 rounded-[--radius-md] border border-[--color-accent-warn]/30 bg-[--color-accent-warn]/5 px-3 py-2.5 text-left text-xs text-[--color-accent-warn]">
+          <p className="mt-6 flex items-start gap-2 rounded-[--radius-md] border border-[--color-warning]/30 bg-[--color-warning]/5 px-3 py-2.5 text-left text-xs text-[--color-warning]">
             <AlertCircle size={14} className="mt-0.5 shrink-0" />
             Firebase isn't configured. Set the <code>VITE_FIREBASE_*</code> env vars, then reload.
           </p>
         )}
 
         {user && !isAdmin && (
-          <p className="mt-6 flex items-start gap-2 rounded-[--radius-md] border border-[--color-accent-warn]/30 bg-[--color-accent-warn]/5 px-3 py-2.5 text-left text-xs text-[--color-accent-warn]">
+          <p className="mt-6 flex items-start gap-2 rounded-[--radius-md] border border-[--color-warning]/30 bg-[--color-warning]/5 px-3 py-2.5 text-left text-xs text-[--color-warning]">
             <AlertCircle size={14} className="mt-0.5 shrink-0" />
             Signed in as {user.email}, but that address isn't on the admin allow-list
             (<code>VITE_ADMIN_EMAILS</code>).

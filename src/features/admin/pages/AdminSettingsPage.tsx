@@ -128,22 +128,49 @@ function PersonalSettings() {
 interface SocialDoc {
   linkedin: string;
   twitter: string;
+  instagram: string;
+  dribbble: string;
+  behance: string;
+  youtube: string;
   email: string;
+  [key: string]: string;
 }
+
+const SOCIAL_FIELDS: { key: keyof SocialDoc; label: string }[] = [
+  { key: "linkedin", label: "LinkedIn URL" },
+  { key: "twitter", label: "Twitter / X URL" },
+  { key: "instagram", label: "Instagram URL" },
+  { key: "dribbble", label: "Dribbble URL" },
+  { key: "behance", label: "Behance URL" },
+  { key: "youtube", label: "YouTube URL" },
+  { key: "email", label: "Public contact email" },
+];
 
 function SocialSettings() {
   const { data, isLoading } = useFirestoreDoc<SocialDoc>("settings", "social");
   const mutation = useSetSettingsDoc("social");
-  const [linkedin, setLinkedin] = useState("");
-  const [twitter, setTwitter] = useState("");
-  const [email, setEmail] = useState("");
+  const [values, setValues] = useState<SocialDoc>({
+    linkedin: "",
+    twitter: "",
+    instagram: "",
+    dribbble: "",
+    behance: "",
+    youtube: "",
+    email: "",
+  });
   const [saved, setSaved] = useState(false);
 
   useEffect(() => {
     if (data) {
-      setLinkedin(data.linkedin ?? "");
-      setTwitter(data.twitter ?? "");
-      setEmail(data.email ?? "");
+      setValues({
+        linkedin: data.linkedin ?? "",
+        twitter: data.twitter ?? "",
+        instagram: data.instagram ?? "",
+        dribbble: data.dribbble ?? "",
+        behance: data.behance ?? "",
+        youtube: data.youtube ?? "",
+        email: data.email ?? "",
+      });
     }
   }, [data]);
 
@@ -155,39 +182,24 @@ function SocialSettings() {
       onSubmit={async (e) => {
         e.preventDefault();
         setSaved(false);
-        await mutation.mutateAsync({ linkedin, twitter, email });
+        await mutation.mutateAsync(values);
         setSaved(true);
       }}
     >
-      <div>
-        <label className="mb-1.5 block text-sm font-medium">LinkedIn URL</label>
-        <input
-          value={linkedin}
-          onChange={(e) => setLinkedin(e.target.value)}
-          className="w-full rounded-[--radius-md] border border-[--color-border] bg-[--color-surface] px-3 py-2 text-sm outline-none focus-visible:border-[--color-accent]"
-        />
-      </div>
-      <div>
-        <label className="mb-1.5 block text-sm font-medium">Twitter / X URL</label>
-        <input
-          value={twitter}
-          onChange={(e) => setTwitter(e.target.value)}
-          className="w-full rounded-[--radius-md] border border-[--color-border] bg-[--color-surface] px-3 py-2 text-sm outline-none focus-visible:border-[--color-accent]"
-        />
-      </div>
-      <div>
-        <label className="mb-1.5 block text-sm font-medium">Public contact email</label>
-        <input
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="w-full rounded-[--radius-md] border border-[--color-border] bg-[--color-surface] px-3 py-2 text-sm outline-none focus-visible:border-[--color-accent]"
-        />
-      </div>
+      {SOCIAL_FIELDS.map((field) => (
+        <div key={field.key}>
+          <label className="mb-1.5 block text-sm font-medium">{field.label}</label>
+          <input
+            value={values[field.key]}
+            onChange={(e) => setValues((v) => ({ ...v, [field.key]: e.target.value }))}
+            className="w-full rounded-[--radius-md] border border-[--color-border] bg-[--color-surface] px-3 py-2 text-sm outline-none focus-visible:border-[--color-accent-from]"
+          />
+        </div>
+      ))}
       <p className="text-xs text-[--color-text-faint]">
-        These links power the live footer (fetched via a lightweight public
-        Firestore REST read, not the SDK, so it doesn't add Firebase to every
-        page's bundle). The GitHub icon always points at your GitHub profile
-        and isn't editable here -- it comes from{" "}
+        These links power the live footer and contact page (fetched via a lightweight public
+        Firestore REST read, not the SDK, so it doesn't add Firebase to every page's bundle). The
+        GitHub icon always points at your GitHub profile and isn't editable here -- it comes from{" "}
         <code>src/config/site.ts</code>.
       </p>
       <SaveButton pending={mutation.isPending} saved={saved} />

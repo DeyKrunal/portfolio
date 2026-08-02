@@ -19,7 +19,10 @@ export function ExperiencePage() {
 
   return (
     <section className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-      <h1 className="font-[--font-display] text-[length:--text-3xl] font-semibold tracking-tight">
+      <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-[--color-accent-from]">
+        Career
+      </p>
+      <h1 className="font-[--font-display] text-[length:--text-3xl] font-bold tracking-tight">
         Experience
       </h1>
 
@@ -42,39 +45,43 @@ export function ExperiencePage() {
       )}
 
       {entries && entries.length > 0 && (
-        <ol className="mt-10 space-y-10 border-l border-[--color-border] pl-6">
+        <ol className="mt-10 space-y-6 border-l border-[--color-border] pl-6">
           {entries.map((entry) => (
             <li key={entry.id} className="relative">
-              <span className="absolute -left-[29px] top-1.5 h-2.5 w-2.5 rounded-full bg-[--color-accent]" />
-              <p className="text-xs font-medium uppercase tracking-wide text-[--color-text-faint]">
-                {formatRange(entry.startDate, entry.endDate)}
-              </p>
-              <h2 className="mt-1 font-[--font-display] text-lg font-semibold">
-                {entry.role} · {entry.company}
-              </h2>
-              {entry.location && (
-                <p className="text-sm text-[--color-text-faint]">{entry.location}</p>
-              )}
-              <p className="mt-2 text-sm text-[--color-text-muted]">{entry.description}</p>
-              {entry.achievements.length > 0 && (
-                <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-[--color-text-muted]">
-                  {entry.achievements.map((a, i) => (
-                    <li key={i}>{a}</li>
-                  ))}
-                </ul>
-              )}
-              {entry.technologies.length > 0 && (
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {entry.technologies.map((t) => (
-                    <span
-                      key={t}
-                      className="rounded-full border border-[--color-border] px-2.5 py-0.5 text-xs"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              )}
+              <span className="absolute -left-[31px] top-6 h-3 w-3 rounded-full bg-gradient-to-br from-[--color-accent-from] to-[--color-accent-to] ring-4 ring-[--color-bg]" />
+              <div className="card-premium p-5">
+                <p className="text-xs font-medium uppercase tracking-wide text-[--color-text-faint]">
+                  {formatRange(entry.startDate, entry.endDate)}
+                </p>
+                <h2 className="mt-1 font-[--font-display] text-lg font-semibold">
+                  {entry.role} · {entry.company}
+                </h2>
+                {entry.location && (
+                  <p className="text-sm text-[--color-text-faint]">{entry.location}</p>
+                )}
+                <p className="mt-2 text-sm leading-relaxed text-[--color-text-muted]">
+                  {entry.description}
+                </p>
+                {entry.achievements.length > 0 && (
+                  <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-[--color-text-muted]">
+                    {entry.achievements.map((a, i) => (
+                      <li key={i}>{a}</li>
+                    ))}
+                  </ul>
+                )}
+                {entry.technologies.length > 0 && (
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {entry.technologies.map((t) => (
+                      <span
+                        key={t}
+                        className="rounded-full border border-[--color-border] bg-[--color-bg-subtle] px-2.5 py-0.5 text-xs"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
             </li>
           ))}
         </ol>

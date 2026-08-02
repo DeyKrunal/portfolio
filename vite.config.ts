@@ -20,8 +20,8 @@ export default defineConfig({
         short_name: "Krunal Dey",
         description:
           "Software engineer building fast, well-crafted products. Projects sync automatically from GitHub.",
-        theme_color: "#0A0A0A",
-        background_color: "#0A0A0A",
+        theme_color: "#07090F",
+        background_color: "#07090F",
         display: "standalone",
         start_url: "/",
         scope: "/",

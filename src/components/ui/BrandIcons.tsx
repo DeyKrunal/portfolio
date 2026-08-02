@@ -23,3 +23,38 @@ export function XIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function InstagramIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true" {...props}>
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function DribbbleIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true" {...props}>
+      <circle cx="12" cy="12" r="9.5" />
+      <path d="M4.5 8.3c2.6 1.1 8.2 2.6 14.6 1.3M2.7 14.5c5.6-1.2 11-.7 15.3 2.3M9.2 3c3 4 4.4 10.5 3.1 17.7" />
+    </svg>
+  );
+}
+
+export function BehanceIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M7.8 10.9c1 0 1.7-.6 1.7-1.6 0-1.1-.7-1.5-1.7-1.5H4.5v3.1h3.3ZM4.5 16.3h3.6c1.1 0 1.9-.5 1.9-1.7 0-1.1-.8-1.7-1.9-1.7H4.5v3.4ZM2 5.7h6.2c2.5 0 3.9 1.2 3.9 3.3 0 1.4-.7 2.2-1.7 2.7 1.4.4 2.2 1.5 2.2 3.1 0 2.3-1.8 3.6-4.4 3.6H2V5.7Zm18.4 3.3h-5.2V7.5h5.2v1.5Zm1.6 5.1H15c.1 1.2 1 1.9 2.2 1.9.9 0 1.6-.4 1.9-1.1H21c-.4 1.7-2 2.9-4.1 2.9-2.9 0-4.7-1.9-4.7-4.9 0-3 1.9-5 4.7-5 2.9 0 4.6 2.1 4.6 5.3 0 .3 0 .5-.1.9Zm-6.9-1.9h4c-.1-1.2-.9-2-2-2-1.1 0-1.9.7-2 2Z" />
+    </svg>
+  );
+}
+
+export function YoutubeIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M22.5 7.2s-.2-1.6-.9-2.3c-.9-.9-1.8-.9-2.3-1C15.9 3.6 12 3.6 12 3.6h0s-3.9 0-7.3.3c-.5 0-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S1.2 9 1.2 10.9v1.9c0 1.9.3 3.7.3 3.7s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.1.3 7.1.3s3.9 0 7.3-.3c.5 0 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.3-1.9.3-3.7v-1.9c0-1.9-.3-3.7-.3-3.7ZM9.7 14.6V7.9l6.4 3.4-6.4 3.3Z" />
+    </svg>
+  );
+}

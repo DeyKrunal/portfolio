@@ -4,14 +4,16 @@ import { Menu, X } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { CommandPaletteTrigger } from "@/components/common/CommandPaletteTrigger";
+import { useMagnetic } from "@/hooks/useMagnetic";
 import { cn } from "@/lib/cn";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const ctaRef = useMagnetic<HTMLAnchorElement>(0.2, 6);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[--color-border] glass">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+    <div className="sticky top-3 z-50 px-3 sm:top-4 sm:px-4">
+      <header className="glass mx-auto flex h-14 max-w-5xl items-center justify-between rounded-full px-4 shadow-[--shadow-md] sm:px-5">
         <NavLink
           to="/"
           className="flex items-center gap-2 font-[--font-display] text-sm font-semibold tracking-tight"
@@ -28,26 +30,26 @@ export function Header() {
               to={item.href}
               className={({ isActive }) =>
                 cn(
-                  "relative rounded-full px-3 py-1.5 text-sm text-[--color-text-muted] transition-colors duration-150 hover:text-[--color-text]",
+                  "nav-underline rounded-full px-3 py-1.5 text-sm text-[--color-text-muted] transition-colors duration-150 hover:text-[--color-text]",
                   isActive && "text-[--color-text]"
                 )
               }
             >
-              {({ isActive }) => (
-                <>
-                  {item.label}
-                  {isActive && (
-                    <span className="absolute inset-x-3 -bottom-[1px] h-[2px] rounded-full bg-[--color-accent]" />
-                  )}
-                </>
-              )}
+              {item.label}
             </NavLink>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-2.5 md:flex">
           <CommandPaletteTrigger />
           <ThemeToggle />
+          <NavLink
+            ref={ctaRef}
+            to="/contact"
+            className="btn-primary rounded-full px-4 py-2 text-xs font-semibold"
+          >
+            Let's talk
+          </NavLink>
         </div>
 
         <button
@@ -59,11 +61,11 @@ export function Header() {
         >
           {open ? <X size={20} /> : <Menu size={20} />}
         </button>
-      </div>
+      </header>
 
       {open && (
         <nav
-          className="border-t border-[--color-border] px-4 py-3 md:hidden"
+          className="glass mx-auto mt-2 max-w-5xl rounded-3xl px-4 py-3 md:hidden"
           aria-label="Primary mobile"
         >
           <div className="flex flex-col gap-1">
@@ -82,6 +84,13 @@ export function Header() {
                 {item.label}
               </NavLink>
             ))}
+            <NavLink
+              to="/contact"
+              onClick={() => setOpen(false)}
+              className="btn-primary mt-1 rounded-full px-3 py-2 text-center text-sm font-semibold"
+            >
+              Let's talk
+            </NavLink>
           </div>
           <div className="mt-3 flex items-center gap-3">
             <CommandPaletteTrigger />
@@ -89,21 +98,21 @@ export function Header() {
           </div>
         </nav>
       )}
-    </header>
+    </div>
   );
 }
 
 /**
  * Signature element: a small live "build status" light next to the
- * wordmark. It pulses green — a quiet nod to the fact that this whole
- * site is a running pipeline (GitHub Action -> JSON -> static build),
- * not a one-time template. Restrained: one signature, nothing else moves.
+ * wordmark -- a quiet nod to the fact that this whole site is a running
+ * pipeline (GitHub Action -> JSON -> static build), not a one-time
+ * template. Restrained: one signature here, nothing else in the navbar moves.
  */
 function StatusDot() {
   return (
     <span className="relative flex h-2 w-2">
-      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[--color-accent] opacity-60" />
-      <span className="relative inline-flex h-2 w-2 rounded-full bg-[--color-accent] signal-dot" />
+      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[--color-accent-from] opacity-60" />
+      <span className="relative inline-flex h-2 w-2 rounded-full bg-gradient-to-br from-[--color-accent-from] to-[--color-accent-to]" />
     </span>
   );
 }

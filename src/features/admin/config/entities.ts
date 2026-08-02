@@ -135,7 +135,20 @@ export const testimonialsConfig: EntityConfig = {
     { name: "authorCompany", label: "Author company", type: "text" },
     { name: "authorAvatarUrl", label: "Author photo", type: "image" },
     { name: "quote", label: "Quote", type: "textarea", required: true },
+    { name: "rating", label: "Rating (1-5, optional)", type: "number", helpText: "Leave 0 to hide the star rating." },
     { name: "linkUrl", label: "Reference link", type: "url" },
     { name: "featured", label: "Featured", type: "boolean" },
+  ],
+};
+
+export const servicesConfig: EntityConfig = {
+  collectionName: "services",
+  singularLabel: "Service",
+  pluralLabel: "Services",
+  titleField: "title",
+  fields: [
+    { name: "title", label: "Title", type: "text", required: true },
+    { name: "description", label: "Description", type: "textarea", required: true },
+    { name: "iconUrl", label: "Icon", type: "image" },
   ],
 };

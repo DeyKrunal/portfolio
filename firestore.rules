@@ -56,6 +56,11 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
+    match /services/{docId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
     // Blog posts: public can only read documents already marked "published".
     // Drafts are only visible to the admin, so they don't leak on refresh.
     match /blogPosts/{docId} {

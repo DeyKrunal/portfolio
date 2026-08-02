@@ -41,9 +41,17 @@ export function ProjectsPage() {
     return result;
   }, [query, category, fuse, repos]);
 
+  const featuredId = useMemo(() => {
+    if (filtered.length === 0) return null;
+    return [...filtered].sort((a, b) => b.stargazerCount - a.stargazerCount)[0].id;
+  }, [filtered]);
+
   return (
     <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-      <h1 className="font-[--font-display] text-[length:--text-3xl] font-semibold tracking-tight">
+      <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-[--color-accent-from]">
+        Work
+      </p>
+      <h1 className="font-[--font-display] text-[length:--text-3xl] font-bold tracking-tight">
         Projects
       </h1>
       <p className="mt-2 max-w-xl text-[--color-text-muted]">
@@ -62,7 +70,7 @@ export function ProjectsPage() {
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search projects by name, language, or topic..."
             aria-label="Search projects"
-            className="w-full rounded-full border border-[--color-border] bg-[--color-surface] py-2.5 pl-10 pr-4 text-sm outline-none focus-visible:border-[--color-accent]"
+            className="w-full rounded-full border border-[--color-border] bg-[--color-surface] py-2.5 pl-10 pr-4 text-sm outline-none focus-visible:border-[--color-accent-from]"
           />
         </div>
 
@@ -75,7 +83,7 @@ export function ProjectsPage() {
               className={cn(
                 "rounded-full border px-3 py-1 text-xs font-medium transition-colors",
                 category === c
-                  ? "border-[--color-accent] bg-[--color-accent]/10 text-[--color-accent]"
+                  ? "border-[--color-accent-from]/40 bg-[--color-accent-from]/10 text-[--color-accent-from]"
                   : "border-[--color-border] text-[--color-text-muted] hover:text-[--color-text]"
               )}
             >
@@ -85,7 +93,7 @@ export function ProjectsPage() {
         </div>
       </div>
 
-      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {isLoading && Array.from({ length: 9 }).map((_, i) => <RepoCardSkeleton key={i} />)}
         {!isLoading && filtered.length === 0 && (
           <p className="col-span-full py-12 text-center text-sm text-[--color-text-muted]">
@@ -93,7 +101,7 @@ export function ProjectsPage() {
           </p>
         )}
         {filtered.map((repo) => (
-          <RepoCard key={repo.id} repo={repo} />
+          <RepoCard key={repo.id} repo={repo} featured={repo.id === featuredId} />
         ))}
       </div>
     </section>

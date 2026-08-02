@@ -9,6 +9,35 @@ whole site still builds to static files servable from GitHub Pages.
 
 ## Status: Phase 4 of 4 (Complete)
 
+**Latest additions**: a new admin-manageable **Services** section (`/services`),
+rotating role text and a real-avatar hero treatment on Home, a lightweight
+canvas particle background (no new dependency), a back-to-top button, four
+more social platforms (Instagram/Dribbble/Behance/YouTube — all optional,
+only rendered if a URL is set), richer Contact form fields (Company/Project
+Type/Budget), cover-image blog cards, and real (not fabricated) stats on the
+About page. See `src/hooks/useRotatingText.ts`, `useCountUp.ts`,
+`useMagnetic.ts`, and `src/components/common/ParticleField.tsx` for the new
+interaction primitives -- all built without adding GSAP, Three.js, or a
+framework migration; see the note below on why.
+
+**On Next.js / Three.js / GSAP**: an earlier design brief asked for these.
+They were deliberately not adopted: Next.js's SSR/API-route benefits don't
+apply once statically exported to GitHub Pages (the hosting this project is
+built around), Three.js's bundle/perf cost is hard to justify for a hero
+avatar when a real GitHub profile photo + CSS treatment reads almost as well,
+and GSAP would duplicate Framer Motion, which is already in use. Framer
+Motion's `whileInView` covers GSAP's ScrollTrigger use case without a second
+animation library.
+
+**Design system**: the visual language is a premium modern/editorial
+aesthetic — deep ink background (`#0B0F19`), an electric blue → royal purple
+gradient accent, Clash Display + Inter + JetBrains Mono type, restrained
+glass surfaces, a floating pill navbar, a magnetic gradient CTA, count-up
+stat animations, and a mouse-spotlight hero. Skills are shown as icon/badge
+cards rather than progress bars by design. See `src/styles/index.css` for
+the full token system.
+
+
 This repo was built in phases so each layer was real, typechecked, and tested
 before the next one landed — not a wall of generated files that looked
 complete but were never run.

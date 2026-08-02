@@ -70,16 +70,16 @@ export function SyncTerminal({ data, isLoading }: SyncTerminalProps) {
   const colorClass: Record<NonNullable<Line["color"]>, string> = {
     text: "text-[--color-text]",
     muted: "text-[--color-text-faint]",
-    accent: "text-[--color-accent]",
-    gold: "text-[--color-accent-alt]",
+    accent: "text-[--color-success]",
+    gold: "text-[--color-cyan]",
   };
 
   return (
     <div className="w-full max-w-md overflow-hidden rounded-[--radius-lg] border border-[--color-border] bg-[#0D111A] shadow-[--shadow-lg]">
       <div className="flex items-center gap-1.5 border-b border-white/5 bg-black/20 px-4 py-3">
-        <span className="h-2.5 w-2.5 rounded-full bg-[--color-accent-warn]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[--color-accent-alt]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[--color-accent]" />
+        <span className="h-2.5 w-2.5 rounded-full bg-[--color-error]" />
+        <span className="h-2.5 w-2.5 rounded-full bg-[--color-warning]" />
+        <span className="h-2.5 w-2.5 rounded-full bg-[--color-success]" />
         <span className="ml-2 font-[--font-mono] text-[11px] text-white/30">
           sync.sh — DeyKrunal
         </span>
@@ -95,7 +95,7 @@ export function SyncTerminal({ data, isLoading }: SyncTerminalProps) {
             <p key={i} className={colorClass[line.color ?? "text"]}>
               {displayText}
               {isCurrent && (
-                <span className="ml-0.5 inline-block h-3.5 w-[7px] animate-pulse bg-[--color-accent] align-middle" />
+                <span className="ml-0.5 inline-block h-3.5 w-[7px] animate-pulse bg-[--color-accent-from] align-middle" />
               )}
             </p>
           );
